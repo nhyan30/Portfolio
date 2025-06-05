@@ -604,143 +604,72 @@ export const skills = [
     category: "backend",
     emoji: "🔄"
   },
-  {
-    name: "OneSignal",
-    level: "Advanced",
-    category: "backend",
-    emoji: "🔔"
-  }
 ]
 
 export const certifications = [
   {
-    name: "Atlassian Agile Project Management Certificate",
-    issuer: "Atlassian & LinkedIn",
+    name: "From Code to Creation: Mastering Game Programming",
+    issuer: "HP & edX",
     date: "2025",
-    link: "https://www.linkedin.com/learning/certificates/cca74e9d7a85dcf63438090c02618f083fca9d244851220c1df2f5876ddfd2e2"
+    link: "https://courses.edx.org/certificates/b0c42f736a22445894d31c73e1feff3a"
   },
   {
-    name: "Docker Foundations Professional Certificate",
-    issuer: "Docker & LinkedIn",
+    name: "Unity Essentials Pathway Certificate",
+    issuer: "Unity",
     date: "2025",
-    link: "https://www.linkedin.com/learning/certificates/15bba84f3ed0f4afea6bbb2711bff1eb94f774e567898cfe93d2305df8c6dc91"
+    link: "https://www.credly.com/badges/34d08b1b-1cdc-4431-b829-86e363a5cea0/linked_in_profile"
   },
   {
-    name: "Tech On the Go Ethics in AI",
-    issuer: "LinkedIn",
+    name: "Fundamentals of Deep Learning Certificate",
+    issuer: "NVIDIA",
     date: "2025",
-    link: "https://www.linkedin.com/learning/certificates/1145bddef125bfee14b557d980491b26c3f18fea78c251a9e01e33c4593eac8f"
+    link: "https://drive.google.com/file/d/1Uc0QinkaKo4PM2GCj0i8QqVcTna1chEA/view?usp=sharing"
   },
   {
-    name: "Career Essentials in Generative AI",
-    issuer: "Microsoft & LinkedIn",
+    name: "Interactive Phishing Awareness Workshop",
+    issuer: "EXPLOIT3RS",
+    date: "2025",
+    link: "https://drive.google.com/file/d/1OliWz2hFmhThlEqHmoi92mcAscnZ0U3P/view?usp=sharing"
+  },
+  {
+    name: "AWS Academy Cloud Foundations",
+    issuer: "Amazon Web Services",
+    date: "2024",
+    link: "https://www.credly.com/badges/d4292b7e-2265-4632-8b8a-c9dd52fd722b/print"
+  },
+  {
+    name: "Applications of AI for Anamoly Detection Certificate",
+    issuer: "NVIDIA",
     date: "2024",
     link:
-      "https://www.linkedin.com/learning/certificates/f2cc323739c326cab7b4c33615393dcbf12b9f938ad759da13747543eb9cf10c"
+      "https://drive.google.com/file/d/1A9jMF1UkUKUk6LlPUZXU71Eguq0wLyzN/view?usp=sharing"
   },
   {
-    name: "Generative AI: The Evolution of Thoughtful Online Search",
-    issuer: "LinkedIn",
-    date: "2023",
+    name: "Cybersecurity Awareness Workshop",
+    issuer: "University of Sharjah",
+    date: "2024",
     link:
-      "https://www.linkedin.com/learning/certificates/414ffbd87b196166f0aaccf7054700782221657cd2e098cfdd6c569b7872d93e"
+      "https://drive.google.com/file/d/1C4c_Cs_D_xaUsnhRRaB11GrDsswkSZUe/view?usp=sharing"
   },
   {
-    name: "TensorFlow Neural Networks and Working with Tables",
-    issuer: "LinkedIn",
-    date: "2023",
+    name: "Robotics Programming Workshop",
+    issuer: "University of Sharjah",
+    date: "2024",
     link:
-      "https://www.linkedin.com/learning/certificates/98f7d488621e0f70883099f0ebfd8a8aca24146ad46575dc22bb484b986aff2f"
+      "https://drive.google.com/file/d/1gepgt53aKLVkQ0743rbrCszL1VVsu-z4/view?usp=sharing"
   },
   {
-    name: "What Is Generative AI",
-    issuer: "LinkedIn",
-    date: "2023",
+    name: "Huawei Certified ICT Associate: Datacom",
+    issuer: "Huawei",
+    date: "2024",
     link:
-      "https://www.linkedin.com/learning/certificates/c794452f07ea418a798d499802744b3382e79fdc500df86efc2b0d8fb7556839"
+      "https://drive.google.com/file/d/1At36TZ-0sw0-rWmfLHZAIuQ-a1wQSoBU/view?usp=sharing"
   },
   {
-    name: "Introduction to Artificial Intelligence",
-    issuer: "LinkedIn",
+    name: "Riding the Generative AI Wave Certicate",
+    issuer: "NVIDIA & University of Sharjah",
     date: "2023",
     link:
-      "https://drive.google.com/file/d/1HjWH9TFxjMykoXZ_MnmxscG5CI6huN8x/view?usp=sharing"
+      "https://drive.google.com/file/d/1dcSxkDdyaXPxMrFfeOcXlBp3aQ7NT_pS/view?usp=sharing"
   },
-  {
-    name: "Nanodegree In Data Analysis",
-    issuer: "TechUp + Udacity",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1LeDKYzFBMUC9_mwUxF51h_bjXRhL6hFI/view?usp=sharing"
-  },
-  {
-    name: "Machine Learning with Python: Foundations",
-    issuer: "LinkedIn",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1LUDYYyGBAVauJKL0HyXy_Y2vZbjbb8du/view?usp=sharing"
-  },
-  {
-    name: "Ethics in the Age of Generative AI",
-    issuer: "LinkedIn",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1E3NUThpvR3i_-9Z4sgc-AXBNzne8CBF8/view?usp=sharing"
-  },
-  {
-    name: "Learning Microsoft 365 Copilot",
-    issuer: "LinkedIn",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1bY_211QsEMSzUoW9f7asWwhOPZ93IYqu/view?usp=drive_link"
-  },
-  {
-    name: "Streamlining Your Work with Copilot",
-    issuer: "LinkedIn",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1YyvLtUE_QDHep6-gJ2ABLg465tk18b4D/view?usp=sharing"
-  },
-  {
-    name: "Building and Deploying Deep Learning Applications with TensorFlow",
-    issuer: "LinkedIn",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1oQiylmW0Pbx8yN6GVEjou9b3-IcLQmjO/view?usp=sharing"
-  },
-  {
-    name: "The Fundamentals of Digital Marketing",
-    issuer: "Google",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1bdIQTahne2eNL8l7pWwCznwb7uJ-YWHE/view?usp=sharing"
-  },
-  {
-    name: "Graphic Design",
-    issuer: "Udemy",
-    date: "2023",
-    link:
-      "https://www.udemy.com/certificate/UC-83ab2b64-6676-4d18-9e96-e01ee7ceca12/"
-  },
-  {
-    name: "Creating Digital Content",
-    issuer: "Forsa",
-    date: "2023",
-    link:
-      "https://for9a-media.s3.amazonaws.com/courses/certificate/forsa-certificate-104724738914926333891.pdf"
-  },
-  {
-    name: "Entrepreneurship",
-    issuer: "Forsa",
-    date: "2023",
-    link:
-      "https://for9a-media.s3.amazonaws.com/courses/certificate/forsa-certificate-104724740214926344021.pdf"
-  },
-  {
-    name: "An Introduction to Electronics",
-    issuer: "The Open University",
-    date: "2023",
-    link:
-      "https://drive.google.com/file/d/1hYfEWjy1oRVAW_W8OsGpsh2nkWkfuoT_/view?usp=sharing"
-  }
 ]
