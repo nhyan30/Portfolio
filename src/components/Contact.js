@@ -22,12 +22,6 @@ const Contact = () => {
       hoverClass: "hover:text-[#E4405F]"
     },
     {
-      icon: Music2,
-      href: "https://tiktok.com/@zeq000",
-      label: "TikTok",
-      hoverClass: "hover:text-[#00F2EA]"
-    },
-    {
       icon: Mail,
       href: "mailto:nhyan187@gmail.com",
       label: "Email",

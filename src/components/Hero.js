@@ -13,7 +13,7 @@ import { useScrollTo } from "../hooks/useScrollTo.js"
 import animationConfig from "../utils/animationConfig.js"
 
 // Import the background image from src/assets
-import bgImage from "../assets/bg.png";
+import bgImage from "../assets/bg1.png";
 
 const Hero = () => {
   const scrollTo = useScrollTo()
@@ -49,11 +49,6 @@ const Hero = () => {
       href: "https://instagram.com/i.nhx",
       label: "Instagram"
     },
-    {
-      icon: Music2,
-      href: "https://tiktok.com/@zeq000",
-      label: "TikTok"
-    }
   ]
 
   return (
