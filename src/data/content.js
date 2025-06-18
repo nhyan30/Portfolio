@@ -1,21 +1,21 @@
 export const projects = [
   {
     id: "vistra",
-    title: "Vistra - AI Foresight Engine",
-    description: "Dubai's cutting-edge AI Foresight Engine that revolutionizes how we understand and predict global trends, patterns, and risks. Built in partnership with Dubai Customs and Zayed University.",
-    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=3732&auto=format&fit=crop",
-    tags: ["AI", "Analytics", "Enterprise"],
-    emoji: "🔮",
-    duration: "8 months",
+    title: "Facial Expression Detection",
+    description: "Deep learning-based Facial Expression Recognition system that detects and classifies emotions in real time.",
+    image: "https://images.unsplash.com/photo-1695902173528-0b15104c4554",
+    tags: ["AI", "Deep Learning", "CNN"],
+    emoji: "👁️‍🗨️",
+    duration: "4 months",
     teamSize: 3,
     role: "Lead Developer",
     features: [
-      "Predictive intelligence engine",
-      "Real-time trend analysis",
-      "Risk management system",
+      "Adaptive emotion-aware interface",
+      "Real-time expression analysis",
+      "Raw data modeling",
       "Smart analytics dashboard",
-      "Custom government solutions",
-      "Enterprise security protocols"
+      "Emotion analytics dashboard",
+      "Ethical surveillance module"
     ],
     technologies: [
       {
@@ -54,17 +54,17 @@ export const projects = [
       author: "Senior Government Official",
       role: "Dubai Customs"
     },
-    github: "https://github.com/zeck00/vistra",
+    github: "https://github.com/nhyan30/Facial-Expression-Detection-Real-Time",
     link: "#"
   },
   {
     id: "banders-potato-app",
-    title: "Bander's Potato App",
+    title: "PascalAdvisor App",
     description:
-      "A bilingual restaurant app with loyalty points, dynamic menu, in-app games, and branch mapping.",
-    image: "https://images.unsplash.com/photo-1576107232684-1279f390859f",
+      "Smart recycling assistant mobile app that helps users recycle, upcycle, and locate nearby recycling centers.",
+    image: "https://images.unsplash.com/photo-1642631171488-23d631eba638",
     tags: ["Flutter", "Firebase", "Google Maps API"],
-    emoji: "🥔",
+    emoji: "♻️",
     duration: "6 months",
     teamSize: 1,
     role: "Lead Mobile Developer",
@@ -97,16 +97,16 @@ export const projects = [
       "Developed an offline-first architecture using local storage",
       "Created an algorithm for loyalty point management"
     ],
-    github: "https://github.com/zeck00/banderspotato"
+    github: "https://github.com/nhyan30/PascalAdvisor"
   },
   {
     id: "automated-review-system",
-    title: "Automated Review Rating System",
+    title: "Parking Detection System",
     description:
-      "Deep learning-powered NLP system to analyze and prioritize urban development reviews.",
-    image: "https://images.unsplash.com/photo-1518932945647-7a1c969f8be2",
-    tags: ["Python", "NLP", "TensorFlow"],
-    emoji: "🤖",
+      "Smart parking detection web app using Convolutional Neural Networks (CNNs) to improve parking management in urban areas",
+    image: "https://images.unsplash.com/photo-1470224114660-3f6686c562eb",
+    tags: ["Python", "CNN", "TensorFlow"],
+    emoji: "🚗",
     duration: "4 months",
     teamSize: 2,
     role: "AI Engineer & Team Lead",
@@ -133,16 +133,17 @@ export const projects = [
       "Fine-tuned a pre-trained BERT model for urban data",
       "Built a parallel processing pipeline for faster execution",
       "Used Plotly for interactive visualizations"
-    ]
+    ], 
+    github: "https://github.com/nhyan30/Parking-Occupancy-Detection"
   },
   {
     id: "malware-detection-cnn",
-    title: "Malware Detection Using CNN",
+    title: "Desert Reckless Adventure",
     description:
-      "A deep learning project to classify malware and goodware using API call sequences. This project was done in collaboration with a professor in Cybersecurity and is to be published in a research paper.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
-    tags: ["Python", "Deep Learning", "Cybersecurity"],
-    emoji: "🛡️",
+      "3D animation that follows the transformative journey of an Emirati man as he escapes the structured confines of a city parking lot and plunges into the wild freedom of the desert.",
+    image: "https://images.unsplash.com/photo-1648812374781-52ab0572571f",
+    tags: ["3ds Max", "Deep Learning", "Cybersecurity"],
+    emoji: "🎥",
     duration: "5 months",
     teamSize: 2,
     role: "Researcher",
@@ -166,19 +167,19 @@ export const projects = [
       "Created custom encoding pipelines for API sequences",
       "Used TensorBoard for detailed visualizations"
     ],
-    github: "https://github.com/zeck00/MalwareDetection"
+    github: "https://github.com/nhyan30/Desert-Reckless-Adventure-3D"
   },
   {
     id: "kitchensync-app",
-    title: "KitchenSync App",
+    title: "Red Light, Green Light Game",
     description:
-      "A Flutter app promoting food waste reduction through better inventory management.",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
-    tags: ["Flutter", "Recommendation System"],
-    emoji: "🥗",
+      "Unity project is a reimagined, high-intensity version of the iconic “Red Light, Green Light” game inspired by Squid Game.",
+    image: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49",
+    tags: ["Unity", "Recommendation System"],
+    emoji: "🎮",
     duration: "3 months",
     teamSize: 3,
-    role: "Lead Mobile Developer",
+    role: "Lead Game Developer",
     features: [
       "Ingredient-based recipe suggestions",
       "Real-time inventory updates",
@@ -205,15 +206,15 @@ export const projects = [
       "Designed an intuitive UI using Flutter widgets",
       "Implemented a lightweight recommendation system for recipes"
     ],
-    github: "https://github.com/zeck00/KitchenSync"
+    github: "https://github.com/nhyan30/RedLightGreenLight-Unity"
   },
   {
     id: "edumentor",
-    title: "EduMentor App",
+    title: "Finance Tracker App",
     description:
-      "A personalized tutoring app targeting Health and Nutrition students.",
+      "A user-friendly finance tracking app to help users monitor and manage expenses effectively.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2765&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1626266061368-46a8f578ddd6",
     tags: ["Flutter", "AI", "Firebase"],
     emoji: "📚",
     duration: "6 months",
@@ -243,17 +244,16 @@ export const projects = [
       "Used Firebase to synchronize data in real-time",
       "Developed intuitive analytics dashboards for users"
     ],
-    github: "https://github.com/zeck00/EduMentor"
   },
   {
     id: "sejda-space",
-    title: "SejdaSpace App",
+    title: "Midi Composer App",
     description:
-      "An Islamic resource app offering Quran, Hadith, Qibla direction, and multilingual support.",
+      "Music composition app, enabling users to create, edit, and share their musical pieces effortlessly.",
     image:
-      "https://images.unsplash.com/photo-1570206916435-745fc43bb9c1?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1641994245114-38cb2df59881",
     tags: ["Flutter", "Firebase"],
-    emoji: "📖",
+    emoji: "🎧",
     duration: "4 months",
     teamSize: 1,
     role: "Full Stack Developer",
@@ -281,15 +281,15 @@ export const projects = [
   },
   {
     id: "medical-center-dbms",
-    title: "Medical Center DBMS",
+    title: "Active Recall System",
     description:
-      "A comprehensive database system for managing medical center operations.",
-    image: "https://images.unsplash.com/photo-1521791055366-0d553872125f",
-    tags: ["SQL", "Database"],
+      "AI test maker aiming to imporve active recall by progressing user through the different levels of bloomstaxonomy.",
+    image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7",
+    tags: ["Python", "Database"],
     emoji: "🏥",
     duration: "2 months",
     teamSize: 4,
-    role: "Database Designer & Developer",
+    role: "AI Engineer",
     features: [
       "Patient record management",
       "Appointment scheduling system",
@@ -311,18 +311,19 @@ export const projects = [
       "Developed a normalized schema to minimize redundancy",
       "Implemented role-based access control for security",
       "Optimized SQL queries for faster data retrieval"
-    ]
+    ],
+    github: "https://github.com/WahabBasa/BloomAI"
   },
   {
     id: "wheel-of-balance",
-    title: "Wheel Of Balance",
+    title: "Flappy Bird Game",
     description: "A comprehensive life management and personal development web application helping users track and enhance different aspects of their lives through visual goal tracking and progress monitoring.",
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2672&auto=format&fit=crop",
-    tags: ["React", "Tailwind", "Firebase"],
-    emoji: "⚖️",
+    image: "https://images.unsplash.com/photo-1632765743329-3b257fe779a6",
+    tags: ["Unity", "Tailwind", "Firebase"],
+    emoji: "🎮",
     duration: "2 weeks",
     teamSize: 1,
-    role: "Full Stack Developer",
+    role: "Lead Game Developer",
     features: [
       "Interactive life wheel visualization",
       "Goal setting and tracking system",
