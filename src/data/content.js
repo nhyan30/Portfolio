@@ -5,7 +5,7 @@ export const projects = [
     description: "Deep learning-based Facial Expression Recognition system that detects and classifies emotions in real time.",
     image: "https://images.unsplash.com/photo-1695902173528-0b15104c4554",
     tags: ["AI", "Deep Learning", "CNN"],
-    emoji: "👁️‍🗨️",
+    emoji: "👁️",
     duration: "4 months",
     teamSize: 3,
     role: "Lead Developer",
@@ -19,29 +19,29 @@ export const projects = [
     ],
     technologies: [
       {
-        name: "LLM",
-        description: "Core AI and predictive modeling framework"
-      },
-      {
         name: "Python",
         description: "Backend development and data processing"
       },
       {
-        name: "React",
-        description: "Frontend dashboard and visualizations"
+        name: "TensorFlow",
+        description: "Building and training CNN for emotion detection"
+      },
+      {
+        name: "OpenCV",
+        description: "Face detection and real-time video processing"
       },
     ],
     challenges: [
-      "Building highly accurate prediction models",
-      "Handling large-scale governmental data",
-      "Implementing enterprise-grade security",
-      "Creating intuitive visualizations for complex data"
+      "Achieving high accuracy with a custom CNN model",
+      "Handling low-resolution and imbalanced data",
+      "Ensuring real-time inference with limited resources",
+      "Developing a robust system that generalizes across diverse faces"
     ],
     solutions: [
-      "Developed custom AI models with 95% prediction accuracy",
-      "Implemented scalable data processing pipeline",
-      "Integrated end-to-end encryption and ISO 27001 compliance",
-      "Created interactive dashboards for data visualization"
+      "Built custom CNN achieving ~60% emotion detection accuracy",
+      "Applied data augmentation for balanced, robust training",
+      "Optimized pipelines for low-latency, real-time inference",
+      "Used regularization techniques for improved model generalization"
     ],
     stats: [
       "95% Prediction Accuracy",
@@ -55,42 +55,43 @@ export const projects = [
       role: "Dubai Customs"
     },
     github: "https://github.com/nhyan30/Facial-Expression-Detection-Real-Time",
-    link: "#"
   },
   {
     id: "banders-potato-app",
     title: "PascalAdvisor App",
     description:
       "Smart recycling assistant mobile app that helps users recycle, upcycle, and locate nearby recycling centers.",
-    image: "https://images.unsplash.com/photo-1642631171488-23d631eba638",
+    image: "https://images.unsplash.com/photo-1595278069441-2cf29f8005a4",
     tags: ["Flutter", "Firebase", "Google Maps API"],
     emoji: "♻️",
     duration: "6 months",
     teamSize: 1,
     role: "Lead Mobile Developer",
     features: [
-      "Dynamic menu management system",
-      "Real-time branch locator with Google Maps integration",
-      "In-app games for engagement",
-      "Loyalty system for points and coupons",
-      "Push notifications for offers and updates",
-      "Firebase integration for authentication and database"
+      "Material recognition engine for smart recycling suggestions",
+      "Real-time recycling center finder with map integration",
+      "Personalized DIY tutorial generator for sustainable reuse",
+      "In-app item manager for adding, viewing, and categorizing waste",
+      "Integrated support and ticketing system for user inquiries",
+      "Robust role-based access for guests, users, moderators, and admins"
     ],
     technologies: [
-      { name: "Flutter", description: "Cross-platform development framework" },
+      { 
+        name: "Flutter", 
+        description: "Cross-platform development framework" },
       {
         name: "Firebase",
         description: "Cloud-based backend platform for data sync"
       },
       {
         name: "Google Maps API",
-        description: "Enables location-based services"
+        description: "Enables location-based recycling center services"
       }
     ],
     challenges: [
-      "Real-time synchronization of data across devices",
-      "Ensuring smooth offline functionality",
-      "Integrating a scalable loyalty system"
+      "Achieving accurate on-device material recognition",
+      "Ensuring seamless recycling center data integration",
+      "Maintaining secure authentication and user data privacy"
     ],
     solutions: [
       "Implemented Firebase Firestore for real-time sync",
