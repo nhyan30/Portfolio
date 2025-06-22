@@ -8,7 +8,7 @@ export const projects = [
     emoji: "👁️",
     duration: "4 months",
     teamSize: 3,
-    role: "Lead Developer",
+    role: "AI Engineer & Team Lead",
     features: [
       "Adaptive emotion-aware interface",
       "Real-time expression analysis",
@@ -94,9 +94,9 @@ export const projects = [
       "Maintaining secure authentication and user data privacy"
     ],
     solutions: [
-      "Implemented Firebase Firestore for real-time sync",
-      "Developed an offline-first architecture using local storage",
-      "Created an algorithm for loyalty point management"
+      "Utilized TensorFlow Lite for on-device material detection",
+      "Integrated role-based access with Firebase Authentication rules",
+      "Built REST APIs for seamless recycling center data access"
     ],
     github: "https://github.com/nhyan30/PascalAdvisor"
   },
@@ -106,34 +106,38 @@ export const projects = [
     description:
       "Smart parking detection web app using Convolutional Neural Networks (CNNs) to improve parking management in urban areas",
     image: "https://images.unsplash.com/photo-1470224114660-3f6686c562eb",
-    tags: ["Python", "CNN", "TensorFlow"],
+    tags: ["Python", "Flask", "TensorFlow"],
     emoji: "🚗",
     duration: "4 months",
     teamSize: 2,
     role: "AI Engineer & Team Lead",
     features: [
-      "Automated sentiment analysis",
-      "Priority scoring for urban projects",
-      "Interactive visualization dashboard",
-      "Batch processing for large datasets"
+      "Automated parking slot classification with CNN",
+      "Confidence-based prediction display for each slot",
+      "Interactive results dashboard with comparative model metrics",
+      "Batch processing for large parking lot images"
     ],
     technologies: [
-      { name: "TensorFlow", description: "Framework for deep learning models" },
-      { name: "BERT", description: "Pre-trained transformer model for text" },
-      {
+      { 
         name: "Python",
-        description: "Used for developing and integrating pipelines"
+        description: "Model training and pipeline integration" },
+      { 
+        name: "Flask",
+        description: "Backend framework for serving prediction APIs" },
+      {
+        name: "TensorFlow", 
+        description: "Framework for building deep learning models"
       }
     ],
     challenges: [
-      "Handling multi-language reviews",
-      "Ensuring high accuracy for sentiment classification",
-      "Processing and visualizing large datasets"
+      "Handling varying lighting conditions in parking images",
+      "Achieving high accuracy across diverse parking scenarios",
+      "Processing large image datasets efficiently"
     ],
     solutions: [
-      "Fine-tuned a pre-trained BERT model for urban data",
-      "Built a parallel processing pipeline for faster execution",
-      "Used Plotly for interactive visualizations"
+      "Optimized model inference for real-time performance",
+      "Utilized data augmentation to handle varied lighting conditions",
+      "Built a user-friendly dashboard for quick result analysis"
     ], 
     github: "https://github.com/nhyan30/Parking-Occupancy-Detection"
   },
@@ -143,30 +147,30 @@ export const projects = [
     description:
       "3D animation that follows the transformative journey of an Emirati man as he escapes the structured confines of a city parking lot and plunges into the wild freedom of the desert.",
     image: "https://images.unsplash.com/photo-1648812374781-52ab0572571f",
-    tags: ["3ds Max", "Deep Learning", "Cybersecurity"],
+    tags: ["Autodesk 3ds Max", "Craft Director Studio"],
     emoji: "🎥",
     duration: "5 months",
     teamSize: 2,
-    role: "Researcher",
+    role: "3D Modeler",
     features: [
-      "Binary classification of malware and goodware",
-      "API sequence transformation into image format",
-      "High-accuracy CNN model",
-      "Training visualization with detailed metrics"
+      "3D rigged car with realistic motion dynamics",
+      "High-fidelity dust and smoke simulations",
+      "Integrated Craft Director Studio for car physics",
+      "Cinematic camera angles and depth of field"
     ],
     technologies: [
-      { name: "TensorFlow", description: "Deep learning framework for CNNs" },
-      { name: "Python", description: "Primary language for implementation" }
+      { name: "Autodesk 3ds Max", description: "3D modeling, rigging, and animation" },
+      { name: "Craft Director Studio", description: "Realistic car dynamics and motion" }
     ],
     challenges: [
-      "Optimizing CNN performance for imbalanced data",
-      "Encoding API sequences effectively",
-      "Visualizing training progress clearly"
+      "Achieving realistic car dynamics across terrains",
+      "Seamless transition between urban and desert scenes",
+      "Optimizing rendering for high-quality, complex environments"
     ],
     solutions: [
-      "Implemented data augmentation to balance the dataset",
-      "Created custom encoding pipelines for API sequences",
-      "Used TensorBoard for detailed visualizations"
+      "Utilized Craft Director Studio for precise car physics",
+      "Blended animations for smooth scene transitions",
+      "Leveraged VRay and Phoenix FD for realistic effects"
     ],
     github: "https://github.com/nhyan30/Desert-Reckless-Adventure-3D"
   },
@@ -176,38 +180,39 @@ export const projects = [
     description:
       "Unity project is a reimagined, high-intensity version of the iconic “Red Light, Green Light” game inspired by Squid Game.",
     image: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49",
-    tags: ["Unity", "Recommendation System"],
+    tags: ["Unity Engine", "C#"],
     emoji: "🎮",
     duration: "3 months",
     teamSize: 3,
     role: "Lead Game Developer",
     features: [
-      "Ingredient-based recipe suggestions",
-      "Real-time inventory updates",
-      "Waste monitoring and reduction reports",
-      "User-friendly mobile-first design"
+      "Realistic physics-based movement mechanics",
+      "Dynamic AI-driven NPC behavior",
+      "Increasing difficulty with escalating tempo",
+      "Time-sensitive Red Light / Green Light mechanics"
     ],
     technologies: [
       {
-        name: "Flutter",
-        description: "Cross-platform framework for development"
+        name: "Unity Engine",
+        description: "Core game development and physics simulation"
       },
       {
-        name: "Custom Recommendation Engine",
-        description: "For recipe suggestions"
+        name: "C#",
+        description: "Gameplay logic and character controls"
       }
     ],
     challenges: [
-      "Integrating real-time inventory management",
-      "Creating a seamless user interface",
-      "Building an efficient recommendation engine"
+      "Achieving precise character stopping mechanics",
+      "Balancing NPC behavior and player difficulty",
+      "Synchronizing animation and sound effects reliably"
     ],
     solutions: [
-      "Built a robust inventory tracking module with real-time updates",
-      "Designed an intuitive UI using Flutter widgets",
-      "Implemented a lightweight recommendation system for recipes"
+      "Utilized Rigidbody physics for precise stopping control",
+      "Developed AI-driven NPCs with adjustable difficulty settings",
+      "Synced animations and sound cues via Unity’s Timeline"
     ],
-    github: "https://github.com/nhyan30/RedLightGreenLight-Unity"
+    github: "https://github.com/nhyan30/RedLightGreenLight-Unity",
+    link: "https://nhyan30.itch.io/squid-game"
   },
   {
     id: "edumentor",
@@ -364,9 +369,9 @@ export const projects = [
   },
   {
     id: "dar-al-maha",
-    title: "Dar Al Maha Publishing",
-    description: "A bilingual (Arabic/English) single-page website for a prestigious publishing house, showcasing their publications, services, and company information with elegant design and smooth transitions.",
-    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2728&auto=format&fit=crop",
+    title: "Samir Al Bahr",
+    description: "2D animation project that brings to life an adventurous and curious sea creature with a heartfelt mission.",
+    image: "https://images.unsplash.com/photo-1628494391268-c9935bc384d5",
     tags: ["React", "Bilingual", "Web Design"],
     emoji: "📚",
     duration: "1 week",
