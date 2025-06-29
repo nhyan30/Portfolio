@@ -4,7 +4,7 @@ export const projects = [
     title: "Facial Expression Detection",
     description: "Deep learning-based Facial Expression Recognition system that detects and classifies emotions in real time.",
     image: "https://images.unsplash.com/photo-1695902173528-0b15104c4554",
-    tags: ["AI", "Deep Learning", "CNN"],
+    tags: ["Python", "TensorFlow", "OpenCV"],
     emoji: "👁️",
     duration: "4 months",
     teamSize: 3,
@@ -172,7 +172,8 @@ export const projects = [
       "Blended animations for smooth scene transitions",
       "Leveraged VRay and Phoenix FD for realistic effects"
     ],
-    github: "https://github.com/nhyan30/Desert-Reckless-Adventure-3D"
+    github: "https://github.com/nhyan30/Desert-Reckless-Adventure-3D",
+    link : "https://drive.google.com/file/d/1Ipaqg8d1wWfb8SvL64HzfXtJGUzoWlFw/view?usp=sharing"
   },
   {
     id: "kitchensync-app",
@@ -180,7 +181,7 @@ export const projects = [
     description:
       "Unity project is a reimagined, high-intensity version of the iconic “Red Light, Green Light” game inspired by Squid Game.",
     image: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49",
-    tags: ["Unity Engine", "C#"],
+    tags: ["Unity Engine", "C#", "Rigidbody Physics"],
     emoji: "🎮",
     duration: "3 months",
     teamSize: 3,
@@ -199,6 +200,10 @@ export const projects = [
       {
         name: "C#",
         description: "Gameplay logic and character controls"
+      },
+      {
+        name: "Rigidbody Physics",
+        description: "Character state and interaction management"
       }
     ],
     challenges: [
@@ -221,34 +226,34 @@ export const projects = [
       "A user-friendly finance tracking app to help users monitor and manage expenses effectively.",
     image:
       "https://images.unsplash.com/photo-1626266061368-46a8f578ddd6",
-    tags: ["Flutter", "AI", "Firebase"],
-    emoji: "📚",
+    tags: ["Java 8", "Android SDK", "SQLite"],
+    emoji: "📊",
     duration: "6 months",
     teamSize: 1,
-    role: "AI Developer & Mobile App Developer",
+    role: "Mobile App Developer",
     features: [
-      "Customized quiz generation using GPT",
-      "Tracking scores and progress by chapter",
-      "Targeted exercises for weak areas",
-      "Dynamic UI tailored for Health and Nutrition students"
+      "Personal finance tracking across multiple accounts",
+      "Offline-first data handling with SQLite",
+      "Scalable MVVM architecture",
+      "Interactive statistics dashboard"
     ],
     technologies: [
       {
-        name: "Flutter",
-        description: "Framework for cross-platform app development"
+        name: "Java 8",
+        description: "Primary language for Android app development"
       },
-      { name: "Firebase", description: "Backend for user data and analytics" },
-      { name: "GPT-based Engine", description: "For AI-generated questions" }
+      { name: "Android SDK", description: "Toolkit for building Android mobile applications" },
+      { name: "SQLite", description: "Local database for offline data storage" }
     ],
     challenges: [
-      "Building dynamic GPT-based question generation",
-      "Ensuring a personalized experience for each student",
-      "Integrating real-time updates for student progress"
+      "Designing a clean, accessible user interface",
+      "Ensuring accurate transaction categorization",
+      "Managing local data consistency and integrity"
     ],
     solutions: [
-      "Designed an AI-driven system for tailored quizzes",
-      "Used Firebase to synchronize data in real-time",
-      "Developed intuitive analytics dashboards for users"
+      "Designed clean UI for easy navigation",
+      "Built custom input forms for transactions",
+      "Implemented MVVM for maintainable architecture structure"
     ],
   },
   {
@@ -258,31 +263,31 @@ export const projects = [
       "Music composition app, enabling users to create, edit, and share their musical pieces effortlessly.",
     image:
       "https://images.unsplash.com/photo-1641994245114-38cb2df59881",
-    tags: ["Flutter", "Firebase"],
-    emoji: "🎧",
+    tags: ["Java 8", "Android SDK", "MIDI Libraries"],
+    emoji: "🎼",
     duration: "4 months",
     teamSize: 1,
-    role: "Full Stack Developer",
+    role: "Mobile App Developer",
     features: [
-      "Offline Quran reading",
-      "Audio recitation with multiple Qaris",
-      "Qibla locator using GPS and compass",
-      "Comprehensive Hadith collection",
-      "Multilingual support for diverse users"
+      "Grid-based interface for melody composition",
+      "MIDI instrument selection and playback",
+      "Adjustable tempo and playback control",
+      "Export as ringtone and share via apps"
     ],
     technologies: [
-      { name: "Flutter", description: "Framework for mobile app development" },
-      { name: "Firebase", description: "Backend for storage and analytics" }
+      { name: "Java 8", description: "Primary language for Android development" },
+      { name: "Android SDK", description: "Framework for building native Android apps" },
+      { name: "MIDI Libraries", description: "Sound synthesis and playback integration" }
     ],
     challenges: [
-      "Ensuring offline-first functionality for the Quran",
-      "Accurate Qibla direction integration",
-      "Supporting multiple languages seamlessly"
+      "Designing an intuitive music composition interface",
+      "Integrating reliable MIDI playback functionality",
+      "Managing accurate tempo and timing control"
     ],
     solutions: [
-      "Utilized local storage for offline content access",
-      "Integrated compass and GPS APIs for precise Qibla directions",
-      "Implemented an i18n solution for multilingual support"
+      "Implemented grid-based UI for easy composition",
+      "Used MIDI libraries for seamless sound playback",
+      "Built tempo controls with precise timing management"
     ]
   },
   {
@@ -291,202 +296,177 @@ export const projects = [
     description:
       "AI test maker aiming to imporve active recall by progressing user through the different levels of bloomstaxonomy.",
     image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7",
-    tags: ["Python", "Database"],
-    emoji: "🏥",
-    duration: "2 months",
+    tags: ["Python", "Azure OpenAI Service", "Vue 3"],
+    emoji: "🧠",
+    duration: "1 months",
     teamSize: 4,
     role: "AI Engineer",
     features: [
-      "Patient record management",
-      "Appointment scheduling system",
-      "Doctor and staff database",
-      "Reporting system for operations analytics"
+      "Personalized question generation via Azure OpenAI",
+      "Dynamic difficulty adjustment using Bloom’s Taxonomy",
+      "Continuous performance evaluation and optimization",
+      "Progress tracking with analytics dashboards"
     ],
     technologies: [
       {
-        name: "SQL",
-        description: "Structured Query Language for managing databases"
+        name: "Python",
+        description: "Backend APIs and performance evaluation logic"
+      },
+      {
+        name: "Azure OpenAI Service",
+        description: "Adaptive question generation and NLP capabilities"
+      },
+      {
+        name: "Vue 3",
+        description: "Frontend interface and visual components"
       }
     ],
     challenges: [
-      "Designing a scalable database schema",
-      "Ensuring data integrity and security",
-      "Optimizing queries for performance"
+      "Creating high-quality adaptive question logic",
+      "Ensuring real-time difficulty adjustment performance",
+      "Designing intuitive, engaging learning interfaces"
     ],
     solutions: [
-      "Developed a normalized schema to minimize redundancy",
-      "Implemented role-based access control for security",
-      "Optimized SQL queries for faster data retrieval"
+      "Built AI-powered adaptive question generation engine",
+      "Leveraged Azure services for scalable infrastructure",
+      "Created responsive, user-friendly learning interface"
     ],
     github: "https://github.com/WahabBasa/BloomAI"
-  },
-  {
-    id: "wheel-of-balance",
-    title: "Flappy Bird Game",
-    description: "A comprehensive life management and personal development web application helping users track and enhance different aspects of their lives through visual goal tracking and progress monitoring.",
-    image: "https://images.unsplash.com/photo-1632765743329-3b257fe779a6",
-    tags: ["Unity", "Tailwind", "Firebase"],
-    emoji: "🎮",
-    duration: "2 weeks",
-    teamSize: 1,
-    role: "Lead Game Developer",
-    features: [
-      "Interactive life wheel visualization",
-      "Goal setting and tracking system",
-      "Progress analytics dashboard",
-      "Personalized action plans",
-      "Real-time data synchronization",
-      "Mobile-responsive design"
-    ],
-    technologies: [
-      {
-        name: "React",
-        description: "Frontend framework for building the user interface"
-      },
-      {
-        name: "Tailwind CSS",
-        description: "Utility-first CSS framework for styling"
-      },
-      {
-        name: "Firebase",
-        description: "Backend platform for authentication and data storage"
-      }
-    ],
-    challenges: [
-      "Creating an intuitive visualization for life balance metrics",
-      "Implementing real-time progress tracking",
-      "Ensuring smooth mobile responsiveness",
-      "Building an engaging user experience"
-    ],
-    solutions: [
-      "Developed a dynamic radar chart for life wheel visualization",
-      "Utilized Firebase Realtime Database for instant updates",
-      "Implemented responsive design patterns using Tailwind CSS",
-      "Created an intuitive and clean user interface"
-    ],
-    github: "https://github.com/zeck00/GoalRadar",
-    link: "https://wheelofbalance.org"
   },
   {
     id: "dar-al-maha",
     title: "Samir Al Bahr",
     description: "2D animation project that brings to life an adventurous and curious sea creature with a heartfelt mission.",
     image: "https://images.unsplash.com/photo-1628494391268-c9935bc384d5",
-    tags: ["React", "Bilingual", "Web Design"],
+    tags: ["Krita", "Adobe After Effects", "Miro"],
     emoji: "📚",
-    duration: "1 week",
+    duration: "4 months",
     teamSize: 1,
-    role: "Frontend Developer",
+    role: "2D Character Designer",
     features: [
-      "Bilingual content management",
-      "Responsive book showcase gallery",
-      "Contact form integration",
-      "Smooth page transitions",
-      "Publication catalog system",
-      "Modern minimalist design"
+      "Expressive 2D character animation sequences",
+      "Hand-drawn designs crafted in Krita",
+      "Three-scene narrative with comedic elements",
+      "Rich visual dictionary for world-building",
+      "Dynamic storytelling with playful motion",
+      "Character-driven exploration and emotional arc"
     ],
     technologies: [
       {
-        name: "React",
-        description: "Frontend library for building the user interface"
+        name: "Krita",
+        description: "Digital illustration for character design"
       },
       {
-        name: "i18next",
-        description: "Internationalization framework for bilingual support"
+        name: "Adobe After Effects",
+        description: "2D animation and scene composition"
       },
       {
-        name: "Framer Motion",
-        description: "Animation library for smooth transitions"
+        name: "Miro",
+        description: "Visual dictionary and concept boards"
       }
     ],
     challenges: [
-      "Implementing seamless language switching",
-      "Maintaining consistent RTL/LTR layouts",
-      "Optimizing performance with image-heavy content",
-      "Creating a cohesive bilingual user experience"
+      "Creating fluid, expressive character animations",
+      "Developing a cohesive visual storytelling style",
+      "Balancing humor with emotional depth",
+      "Designing unique underwater world elements"
     ],
     solutions: [
-      "Built a robust i18n system for language management",
-      "Developed flexible layouts that work in both directions",
-      "Implemented lazy loading and image optimization",
-      "Created a unified design system for both languages"
+      "Sketched detailed storyboards for clear direction",
+      "Used Krita for consistent visual design",
+      "Applied After Effects for smooth animation",
+      "Created a Miro board to organize references"
     ],
-    github: "https://github.com/zeck00/daralmaha",
-    link: "https://daralmaha.netlify.app/"
+    github: "https://github.com/nhyan30/Samir-2d-animation",
+    link: "https://drive.google.com/file/d/1S0w-KoXIyypQpLRQmVc_cNqDGGbKMDiR/view"
+  },
+  {
+    id: "ovarian-cancer-detection",
+    title: "Ovarian Cancer Detection",
+    description: "Aims to detect ovarian cancer and its subtypes using deep learning models applied to histopathology images.",
+    image: "https://images.unsplash.com/photo-1713055096023-1a331bdf0974",
+    tags: ["Python", "PyTorch", "Google Colab"],
+    emoji: "🧬",
+    duration: "2 weeks",
+    teamSize: 3,
+    role: "AI Developer",
+    features: [
+      "Multiclass classification of ovarian cancer subtypes",
+      "Histopathology image-based diagnosis using deep learning",
+      "Multiple architectures: baseline CNN and VGG variants",
+      "Transfer learning with fine-tuning for improved accuracy",
+      "Evaluation with confusion matrix, ROC-AUC, and F1-score",
+      "Visual prediction comparison for test images"
+    ],
+    technologies: [
+      {
+        name: "Python",
+        description: "Core language for processing and scripting"
+      },
+      {
+        name: "Google Colab",
+        description: "GPU-enabled training environment"
+      },
+      {
+        name: "PyTorch",
+        description: "Deep learning framework for model training"
+      }
+    ],
+    challenges: [
+      "Training highly accurate classification models",
+      "Handling class imbalance across subtypes",
+      "Processing large histopathology image datasets",
+      "Avoiding overfitting on limited samples"
+    ],
+    solutions: [
+      "Fine-tuned models based on validation metrics",
+      "Visualized predictions for interpretability and trust",
+      "Used transfer learning with VGG variants",
+      "Applied data augmentation to reduce overfitting"
+    ],
+    github: "https://github.com/nhyan30/Ovarian-Cancer-Detection",
   },
 ]
 
 export const experiences = [
   {
-    title: "Full Stack Mobile App Developer",
-    company: "Bander's Potato",
-    period: "Aug 2024 – Present",
+    title: "AI & DL Engineer",
+    company: "University of Sharjah",
+    period: "Jan 2025 – May 2025",
     description:
-      "Leading mobile app development and implementing innovative features like loyalty points and branch mapping.",
-    companyUrl: "https://www.banderspotato.com"
+      "Develop AI models to predict user experiences, contributing to urban development research.",
+    companyUrl: "https://www.sharjah.ac.ae/"
   },
   {
-    title: "President",
+    title: "Member",
     company: "UOS ACM Student Chapter",
-    period: "Aug 2024 – Present",
+    period: "Aug 2024 – May 2025",
     description:
-      "Driving innovation through technical initiatives and organizing developer-centric events.",
+      "Leading strategic planning and execution of chapter events, connecting and building a  reputation of the chapter locally and globally.",
     companyUrl: "https://www.sharjah.ac.ae/en/Academics/CI/ACM-Student-Chapter"
   },
   {
-    title: "Technical Operations Manager",
-    company: "Esaal",
-    period: "Jan 2024 – Jun 2024",
-    description:
-      "Managed technical operations and led seamless app integrations and feature launches.",
-    companyUrl: "https://www.esaal.co"
-  },
-  {
-    title: "Flutter Developer",
-    company: "Esaal",
-    period: "Jun 2023 – Jun 2024",
-    description: "Designed and maintained cross-platform mobile applications.",
-    companyUrl: "https://www.esaal.co"
-  },
-  {
-    title: "AI & DL Engineer",
+    title: "Frontend Developer",
     company: "University of Sharjah",
-    period: "May 2023 – Jan 2024",
+    period: "Aug 2024 – Mar 2025",
     description:
-      "Developed AI models for urban research, focusing on NLP and machine learning.",
-    companyUrl: "https://www.sharjah.ac.ae"
+      "Develop AI-powered app to assist students, in collaboration with computing and health sciences  colleges.",
+    companyUrl: "https://www.sharjah.ac.ae/"
   },
   {
-    title: "AI & DL Mentor",
+    title: "Software Engineer",
+    company: "BlindShell",
+    period: "Jun 2024 – Sep 2024",
+    description: "Designed and developed accessible, user-friendly applications using Java 8 tailored for visually impaired users.",
+    companyUrl: "https://www.blindshell.com/"
+  },
+  {
+    title: "Service Desk",
     company: "University of Sharjah",
-    period: "Nov 2022 – Mar 2023",
+    period: "Dec 2023 – Feb 2024",
     description:
-      "Guided students through advanced deep learning projects, contributing to academic excellence.",
+      "Resolved issues and concerns efficiently, demonstrating strong problem solving skills.",
     companyUrl: "https://www.sharjah.ac.ae"
-  },
-  {
-    title: "Freelance Full Stack Developer",
-    company: "Freelance",
-    period: "Aug 2024 – Present",
-    description:
-      "Delivered tailored web and mobile app solutions for diverse clients.",
-    companyUrl: "#"
-  },
-  {
-    title: "AI NLP Researcher",
-    company: "Private Work",
-    period: "2024",
-    description:
-      "Engineered sentiment analysis models for urban development decision-making.",
-    companyUrl: "#"
-  },
-  {
-    title: "CNN Researcher",
-    company: "Malware Detection Project",
-    period: "2024",
-    description:
-      "Developed a CNN-based system achieving 95% accuracy for malware classification.",
-    companyUrl: "https://sharjah.ac.ae"
   }
 ]
 
@@ -614,6 +594,12 @@ export const skills = [
 ]
 
 export const certifications = [
+  {
+    name: "Intro to AI and Gen AI for Nomu Al Ghurair TechUp Explorer",
+    issuer: "Udacity",
+    date: "2025",
+    link: "https://www.udacity.com/certificate/e/ced49466-4881-11f0-84c9-afafcb386c65"
+  },
   {
     name: "From Code to Creation: Mastering Game Programming",
     issuer: "HP & edX",
