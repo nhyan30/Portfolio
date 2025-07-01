@@ -1,5 +1,4 @@
 import { useRef, useEffect, useCallback } from "react";
-import animationConfig from "../utils/animationConfig.js";
 
 const ClickSpark = ({
   sparkColor = "#fff",

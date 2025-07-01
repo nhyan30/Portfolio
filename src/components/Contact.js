@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Linkedin, Github, Instagram, Music2, Mail, Calendar } from "lucide-react"
+import { Linkedin, Github, Instagram, Mail, Calendar } from "lucide-react"
 
 const Contact = () => {
   const socialLinks = [
