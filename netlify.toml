@@ -1,17 +1,7 @@
 # Settings for Netlify deployment
 [build]
   publish = "build"
-  command = "npm install && npm run build"
-
-# Add the JavaScript Obfuscator plugin
-[[plugins]]
-  package = "netlify-plugin-js-obfuscator"
-
-  # Optional configuration (uses your obfuscator.config.json by default)
-  # [plugins.inputs]
-  #   compact = true
-  #   selfDefending = true
-  #   disableConsoleOutput = true
+  command = "npm install && npm run build:obfuscate"
 
 # Handles client-side routing
 [[redirects]]
@@ -66,4 +56,4 @@
 [[headers]]
   for = "/images/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=31536000, immutable" 
