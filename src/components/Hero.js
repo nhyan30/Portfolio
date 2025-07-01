@@ -6,8 +6,7 @@ import {
   Github,
   Linkedin,
   Mail,
-  Instagram,
-  Music2
+  Instagram
 } from "lucide-react"
 import { useScrollTo } from "../hooks/useScrollTo.js"
 import animationConfig from "../utils/animationConfig.js"
