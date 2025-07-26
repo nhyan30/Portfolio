@@ -1,5 +1,95 @@
 export const projects = [
   {
+    id: "ovarian-cancer-detection",
+    title: "Ovarian Cancer Detection",
+    description: "Aims to detect ovarian cancer and its subtypes using deep learning models applied to histopathology images.",
+    image: "https://images.unsplash.com/photo-1713055096023-1a331bdf0974",
+    tags: ["Python", "PyTorch", "Google Colab"],
+    emoji: "🧬",
+    duration: "2 weeks",
+    teamSize: 3,
+    role: "AI Developer",
+    features: [
+      "Multiclass classification of ovarian cancer subtypes",
+      "Histopathology image-based diagnosis using deep learning",
+      "Multiple architectures: baseline CNN and VGG variants",
+      "Transfer learning with fine-tuning for improved accuracy",
+      "Evaluation with confusion matrix, ROC-AUC, and F1-score",
+      "Visual prediction comparison for test images"
+    ],
+    technologies: [
+      {
+        name: "Python",
+        description: "Core language for processing and scripting"
+      },
+      {
+        name: "Google Colab",
+        description: "GPU-enabled training environment"
+      },
+      {
+        name: "PyTorch",
+        description: "Deep learning framework for model training"
+      }
+    ],
+    challenges: [
+      "Training highly accurate classification models",
+      "Handling class imbalance across subtypes",
+      "Processing large histopathology image datasets",
+      "Avoiding overfitting on limited samples"
+    ],
+    solutions: [
+      "Fine-tuned models based on validation metrics",
+      "Visualized predictions for interpretability and trust",
+      "Used transfer learning with VGG variants",
+      "Applied data augmentation to reduce overfitting"
+    ],
+    github: "https://github.com/nhyan30/Ovarian-Cancer-Detection",
+  },
+  {
+    id: "kitchensync-app",
+    title: "Red Light, Green Light Game",
+    description:
+      "Unity project is a reimagined, high-intensity version of the iconic “Red Light, Green Light” game inspired by Squid Game.",
+    image: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49",
+    tags: ["Unity Engine", "C#", "Rigidbody Physics"],
+    emoji: "🎮",
+    duration: "3 months",
+    teamSize: 3,
+    role: "Lead Game Developer",
+    features: [
+      "Realistic physics-based movement mechanics",
+      "Dynamic AI-driven NPC behavior",
+      "Increasing difficulty with escalating tempo",
+      "Time-sensitive Red Light / Green Light mechanics"
+    ],
+    technologies: [
+      {
+        name: "Unity Engine",
+        description: "Core game development and physics simulation"
+      },
+      {
+        name: "C#",
+        description: "Gameplay logic and character controls"
+      },
+      {
+        name: "Rigidbody Physics",
+        description: "Character state and interaction management"
+      }
+    ],
+    challenges: [
+      "Achieving precise character stopping mechanics",
+      "Balancing NPC behavior and player difficulty",
+      "Synchronizing animation and sound effects reliably"
+    ],
+    solutions: [
+      "Utilized Rigidbody physics for precise stopping control",
+      "Developed AI-driven NPCs with adjustable difficulty settings",
+      "Synced animations and sound cues via Unity’s Timeline"
+    ],
+    github: "https://github.com/nhyan30/RedLightGreenLight-Unity",
+    link: "https://nhyan30.itch.io/squid-game"
+  },
+  {
     id: "vistra",
     title: "Facial Expression Detection",
     description: "Deep learning-based Facial Expression Recognition system that detects and classifies emotions in real time.",
@@ -176,121 +266,6 @@ export const projects = [
     link : "https://drive.google.com/file/d/1Ipaqg8d1wWfb8SvL64HzfXtJGUzoWlFw/view?usp=sharing"
   },
   {
-    id: "kitchensync-app",
-    title: "Red Light, Green Light Game",
-    description:
-      "Unity project is a reimagined, high-intensity version of the iconic “Red Light, Green Light” game inspired by Squid Game.",
-    image: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49",
-    tags: ["Unity Engine", "C#", "Rigidbody Physics"],
-    emoji: "🎮",
-    duration: "3 months",
-    teamSize: 3,
-    role: "Lead Game Developer",
-    features: [
-      "Realistic physics-based movement mechanics",
-      "Dynamic AI-driven NPC behavior",
-      "Increasing difficulty with escalating tempo",
-      "Time-sensitive Red Light / Green Light mechanics"
-    ],
-    technologies: [
-      {
-        name: "Unity Engine",
-        description: "Core game development and physics simulation"
-      },
-      {
-        name: "C#",
-        description: "Gameplay logic and character controls"
-      },
-      {
-        name: "Rigidbody Physics",
-        description: "Character state and interaction management"
-      }
-    ],
-    challenges: [
-      "Achieving precise character stopping mechanics",
-      "Balancing NPC behavior and player difficulty",
-      "Synchronizing animation and sound effects reliably"
-    ],
-    solutions: [
-      "Utilized Rigidbody physics for precise stopping control",
-      "Developed AI-driven NPCs with adjustable difficulty settings",
-      "Synced animations and sound cues via Unity’s Timeline"
-    ],
-    github: "https://github.com/nhyan30/RedLightGreenLight-Unity",
-    link: "https://nhyan30.itch.io/squid-game"
-  },
-  {
-    id: "edumentor",
-    title: "Finance Tracker App",
-    description:
-      "A user-friendly finance tracking app to help users monitor and manage expenses effectively.",
-    image:
-      "https://images.unsplash.com/photo-1626266061368-46a8f578ddd6",
-    tags: ["Java 8", "Android SDK", "SQLite"],
-    emoji: "📊",
-    duration: "6 months",
-    teamSize: 1,
-    role: "Mobile App Developer",
-    features: [
-      "Personal finance tracking across multiple accounts",
-      "Offline-first data handling with SQLite",
-      "Scalable MVVM architecture",
-      "Interactive statistics dashboard"
-    ],
-    technologies: [
-      {
-        name: "Java 8",
-        description: "Primary language for Android app development"
-      },
-      { name: "Android SDK", description: "Toolkit for building Android mobile applications" },
-      { name: "SQLite", description: "Local database for offline data storage" }
-    ],
-    challenges: [
-      "Designing a clean, accessible user interface",
-      "Ensuring accurate transaction categorization",
-      "Managing local data consistency and integrity"
-    ],
-    solutions: [
-      "Designed clean UI for easy navigation",
-      "Built custom input forms for transactions",
-      "Implemented MVVM for maintainable architecture structure"
-    ],
-  },
-  {
-    id: "sejda-space",
-    title: "Midi Composer App",
-    description:
-      "Music composition app, enabling users to create, edit, and share their musical pieces effortlessly.",
-    image:
-      "https://images.unsplash.com/photo-1641994245114-38cb2df59881",
-    tags: ["Java 8", "Android SDK", "MIDI Libraries"],
-    emoji: "🎼",
-    duration: "4 months",
-    teamSize: 1,
-    role: "Mobile App Developer",
-    features: [
-      "Grid-based interface for melody composition",
-      "MIDI instrument selection and playback",
-      "Adjustable tempo and playback control",
-      "Export as ringtone and share via apps"
-    ],
-    technologies: [
-      { name: "Java 8", description: "Primary language for Android development" },
-      { name: "Android SDK", description: "Framework for building native Android apps" },
-      { name: "MIDI Libraries", description: "Sound synthesis and playback integration" }
-    ],
-    challenges: [
-      "Designing an intuitive music composition interface",
-      "Integrating reliable MIDI playback functionality",
-      "Managing accurate tempo and timing control"
-    ],
-    solutions: [
-      "Implemented grid-based UI for easy composition",
-      "Used MIDI libraries for seamless sound playback",
-      "Built tempo controls with precise timing management"
-    ]
-  },
-  {
     id: "medical-center-dbms",
     title: "Active Recall System",
     description:
@@ -381,50 +356,75 @@ export const projects = [
     link: "https://drive.google.com/file/d/1S0w-KoXIyypQpLRQmVc_cNqDGGbKMDiR/view"
   },
   {
-    id: "ovarian-cancer-detection",
-    title: "Ovarian Cancer Detection",
-    description: "Aims to detect ovarian cancer and its subtypes using deep learning models applied to histopathology images.",
-    image: "https://images.unsplash.com/photo-1713055096023-1a331bdf0974",
-    tags: ["Python", "PyTorch", "Google Colab"],
-    emoji: "🧬",
-    duration: "2 weeks",
-    teamSize: 3,
-    role: "AI Developer",
+    id: "edumentor",
+    title: "Finance Tracker App",
+    description:
+      "A user-friendly finance tracking app to help users monitor and manage expenses effectively.",
+    image:
+      "https://images.unsplash.com/photo-1626266061368-46a8f578ddd6",
+    tags: ["Java 8", "Android SDK", "SQLite"],
+    emoji: "📊",
+    duration: "6 months",
+    teamSize: 1,
+    role: "Mobile App Developer",
     features: [
-      "Multiclass classification of ovarian cancer subtypes",
-      "Histopathology image-based diagnosis using deep learning",
-      "Multiple architectures: baseline CNN and VGG variants",
-      "Transfer learning with fine-tuning for improved accuracy",
-      "Evaluation with confusion matrix, ROC-AUC, and F1-score",
-      "Visual prediction comparison for test images"
+      "Personal finance tracking across multiple accounts",
+      "Offline-first data handling with SQLite",
+      "Scalable MVVM architecture",
+      "Interactive statistics dashboard"
     ],
     technologies: [
       {
-        name: "Python",
-        description: "Core language for processing and scripting"
+        name: "Java 8",
+        description: "Primary language for Android app development"
       },
-      {
-        name: "Google Colab",
-        description: "GPU-enabled training environment"
-      },
-      {
-        name: "PyTorch",
-        description: "Deep learning framework for model training"
-      }
+      { name: "Android SDK", description: "Toolkit for building Android mobile applications" },
+      { name: "SQLite", description: "Local database for offline data storage" }
     ],
     challenges: [
-      "Training highly accurate classification models",
-      "Handling class imbalance across subtypes",
-      "Processing large histopathology image datasets",
-      "Avoiding overfitting on limited samples"
+      "Designing a clean, accessible user interface",
+      "Ensuring accurate transaction categorization",
+      "Managing local data consistency and integrity"
     ],
     solutions: [
-      "Fine-tuned models based on validation metrics",
-      "Visualized predictions for interpretability and trust",
-      "Used transfer learning with VGG variants",
-      "Applied data augmentation to reduce overfitting"
+      "Designed clean UI for easy navigation",
+      "Built custom input forms for transactions",
+      "Implemented MVVM for maintainable architecture structure"
     ],
-    github: "https://github.com/nhyan30/Ovarian-Cancer-Detection",
+  },
+  {
+    id: "sejda-space",
+    title: "Midi Composer App",
+    description:
+      "Music composition app, enabling users to create, edit, and share their musical pieces effortlessly.",
+    image:
+      "https://images.unsplash.com/photo-1641994245114-38cb2df59881",
+    tags: ["Java 8", "Android SDK", "MIDI Libraries"],
+    emoji: "🎼",
+    duration: "4 months",
+    teamSize: 1,
+    role: "Mobile App Developer",
+    features: [
+      "Grid-based interface for melody composition",
+      "MIDI instrument selection and playback",
+      "Adjustable tempo and playback control",
+      "Export as ringtone and share via apps"
+    ],
+    technologies: [
+      { name: "Java 8", description: "Primary language for Android development" },
+      { name: "Android SDK", description: "Framework for building native Android apps" },
+      { name: "MIDI Libraries", description: "Sound synthesis and playback integration" }
+    ],
+    challenges: [
+      "Designing an intuitive music composition interface",
+      "Integrating reliable MIDI playback functionality",
+      "Managing accurate tempo and timing control"
+    ],
+    solutions: [
+      "Implemented grid-based UI for easy composition",
+      "Used MIDI libraries for seamless sound playback",
+      "Built tempo controls with precise timing management"
+    ]
   },
 ]
 
@@ -594,6 +594,24 @@ export const skills = [
 ]
 
 export const certifications = [
+   {
+    name: ".Net Full Stack Foundation",
+    issuer: "Board Infinity",
+    date: "2025",
+    link: "https://www.coursera.org/account/accomplishments/verify/NSUAMKO2PJKC"
+  },
+  {
+    name: "Introduction to C# Programming and Unity",
+    issuer: "University of Colorado System",
+    date: "2025",
+    link: "https://www.coursera.org/account/accomplishments/verify/3EPO410YBE68"
+  },
+  {
+    name: "Unity Junior Programmer",
+    issuer: "Unity",
+    date: "2025",
+    link: "https://www.credly.com/badges/e46e3103-e600-43a0-a30e-15a9e368564f/linked_in_profile"
+  },
   {
     name: "Intro to AI and Gen AI for Nomu Al Ghurair TechUp Explorer",
     issuer: "Udacity",

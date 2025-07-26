@@ -125,7 +125,7 @@ const Hero = () => {
         </ClickSpark>
           <div className="w-48 h-48 mx-auto relative">
             <img
-              src="https://drive.google.com/thumbnail?id=170DV1c23K0K5g64jTsyNEStUGTrA6kYJ"
+              src="https://drive.google.com/thumbnail?id=1osb4jsnouGz9Y_lljIenGzoK55zWwQP3"
               alt="Nahyan Nabil"
               className="rounded-full w-45 h-45 md:w-45 md:h-45 object-cover mx-auto mb-8 glow-effect"
             />
