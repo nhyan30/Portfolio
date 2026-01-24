@@ -594,7 +594,13 @@ export const skills = [
 ]
 
 export const certifications = [
-   {
+  {
+    name: "More C# Programming and Unity",
+    issuer: "University of Colorado",
+    date: "2025",
+    link: "https://www.coursera.org/account/accomplishments/verify/ZLZ9M880VLUA"
+  },
+  {
     name: ".Net Full Stack Foundation",
     issuer: "Board Infinity",
     date: "2025",
@@ -602,7 +608,7 @@ export const certifications = [
   },
   {
     name: "Introduction to C# Programming and Unity",
-    issuer: "University of Colorado System",
+    issuer: "University of Colorado",
     date: "2025",
     link: "https://www.coursera.org/account/accomplishments/verify/3EPO410YBE68"
   },

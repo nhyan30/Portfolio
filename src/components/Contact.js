@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Linkedin, Github, Instagram, Mail, Calendar } from "lucide-react"
+import { Linkedin, Github/*, Instagram*/, Mail, Calendar } from "lucide-react"
 
 const Contact = () => {
   const socialLinks = [
@@ -15,12 +15,12 @@ const Contact = () => {
       label: "GitHub",
       hoverClass: "hover:text-gray-400"
     },
-    {
-      icon: Instagram,
-      href: "https://instagram.com/i.nhx",
-      label: "Instagram",
-      hoverClass: "hover:text-[#E4405F]"
-    },
+    // {
+    //   icon: Instagram,
+    //   href: "https://instagram.com/i.nhx",
+    //   label: "Instagram",
+    //   hoverClass: "hover:text-[#E4405F]"
+    // },
     {
       icon: Mail,
       href: "mailto:nhyan187@gmail.com",

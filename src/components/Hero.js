@@ -6,7 +6,7 @@ import {
   Github,
   Linkedin,
   Mail,
-  Instagram
+  // Instagram
 } from "lucide-react"
 import { useScrollTo } from "../hooks/useScrollTo.js"
 import animationConfig from "../utils/animationConfig.js"
@@ -43,11 +43,11 @@ const Hero = () => {
       href: "mailto:nhyan187@gmail.com",
       label: "Email"
     },
-    {
-      icon: Instagram,
-      href: "https://instagram.com/i.nhx",
-      label: "Instagram"
-    },
+    // {
+    //   icon: Instagram,
+    //   href: "https://instagram.com/i.nhx",
+    //   label: "Instagram"
+    // },
   ]
 
   return (
@@ -157,7 +157,7 @@ const Hero = () => {
           transition={{ delay: animationConfig.delay.medium }}
           className="text-lg md:text-2xl text-gray-400 mb-8 font-light"
         >
-          Software Engineer • AI Engineer •  UI/UX Designer • Innovator
+          Software Engineer • UI/UX Designer • Game Developer • AI Engineer
         </motion.p>
 
         <motion.div
