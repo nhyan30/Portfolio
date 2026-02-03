@@ -54,8 +54,12 @@ const Projects = () => {
             <motion.div
               key={project.id}
               variants={itemVariants}
-              className="group cursor-pointer"
-              onClick={() => navigate(`/project/${project.id}`)}
+              className={`group ${project.clickable !== false ? 'cursor-pointer' : ''}`}
+              onClick={() => {
+                if (project.clickable !== false) {
+                  navigate(`/project/${project.id}`)
+                }
+              }}
             >
               <TiltedCard
                 imageSrc={project.image}

@@ -1,4 +1,54 @@
 export const projects = [
+    {
+    id: "cities-of-the-philosophers",
+    title: "Interactive Splash Wall",
+    clickable: false,
+    description:
+      "A multi-screen installation with shader-based transitions reacting to keyboard-triggered object inputs.",
+    image: "https://drive.google.com/thumbnail?id=1jdmVGfBpSTJBS50Q64ZvjzWmnVkPApOA",
+    tags: ["Interactive", "Custom Shader", "Multi-Screen"],
+    emoji: "🌊",
+  },
+    {
+    id: "cities-of-the-philosophers",
+    title: "Cycling Challenge",
+    clickable: false,
+    description:
+      "A multiplayer racing experience where pedaling speed drives real-time progress along spline-based tracks.",
+    image: "https://drive.google.com/thumbnail?id=1Mt2gTtI8vspD1K447ha66KJg5X_jefek",
+    tags: ["Multiplayer", "Dreamteck Splines"],
+    emoji: "🚴",
+  },
+      {
+    id: "tictactoe",
+    title: "TicTacToe Robotic Arm",
+    clickable: false,
+    description:
+      "A Python-powered robotic game using NFC and serial communication with interactive LEDs.",
+    image: "https://drive.google.com/thumbnail?id=1m4QTYOPYBZGoDSzhEIvzvm5D6nTfFogg",
+    tags: ["Python", "Robotics", "Interactive"],
+    emoji: "🤖",
+  },
+      {
+    id: "interactive-wall",
+    title: "Interactive Wall",
+    clickable: false,
+    description:
+      "A physics-driven installation where kicking a ball alters a 3D digital wall in real time.",
+    image: "https://drive.google.com/thumbnail?id=1FYGYS0dNM1QQbFvjleSroTKv3pJPI3JG",
+    tags: ["Physics", "Interactive"],
+    emoji: "⚽",
+  },
+      {
+    id: "mirrors-of-the-self",
+    title: "Interactive Quiz",
+    clickable: false,
+    description:
+      "A bilingual tablet-based quiz displaying personalized results on-screen and via email.",
+    image: "https://drive.google.com/thumbnail?id=1e_T6XMmmjqDadDWFpZWEc17bNrSIEO9y",
+    tags: ["Quiz", "Interactive", "Bilingual"],
+    emoji: "🧠",
+  },
   {
     id: "ovarian-cancer-detection",
     title: "Ovarian Cancer Detection",
@@ -46,7 +96,7 @@ export const projects = [
     github: "https://github.com/nhyan30/Ovarian-Cancer-Detection",
   },
   {
-    id: "kitchensync-app",
+    id: "green-light-red-light",
     title: "Red Light, Green Light Game",
     description:
       "Unity project is a reimagined, high-intensity version of the iconic “Red Light, Green Light” game inspired by Squid Game.",
@@ -90,7 +140,7 @@ export const projects = [
     link: "https://nhyan30.itch.io/squid-game"
   },
   {
-    id: "vistra",
+    id: "facial-expression-detection",
     title: "Facial Expression Detection",
     description: "Deep learning-based Facial Expression Recognition system that detects and classifies emotions in real time.",
     image: "https://images.unsplash.com/photo-1695902173528-0b15104c4554",
@@ -147,7 +197,7 @@ export const projects = [
     github: "https://github.com/nhyan30/Facial-Expression-Detection-Real-Time",
   },
   {
-    id: "banders-potato-app",
+    id: "pascal-advisor-app",
     title: "PascalAdvisor App",
     description:
       "Smart recycling assistant mobile app that helps users recycle, upcycle, and locate nearby recycling centers.",
@@ -191,7 +241,7 @@ export const projects = [
     github: "https://github.com/nhyan30/PascalAdvisor"
   },
   {
-    id: "automated-review-system",
+    id: "parking-detection-system",
     title: "Parking Detection System",
     description:
       "Smart parking detection web app using Convolutional Neural Networks (CNNs) to improve parking management in urban areas",
@@ -232,7 +282,7 @@ export const projects = [
     github: "https://github.com/nhyan30/Parking-Occupancy-Detection"
   },
   {
-    id: "malware-detection-cnn",
+    id: "desert-reckless-adventure",
     title: "Desert Reckless Adventure",
     description:
       "3D animation that follows the transformative journey of an Emirati man as he escapes the structured confines of a city parking lot and plunges into the wild freedom of the desert.",
@@ -266,7 +316,7 @@ export const projects = [
     link : "https://drive.google.com/file/d/1Ipaqg8d1wWfb8SvL64HzfXtJGUzoWlFw/view?usp=sharing"
   },
   {
-    id: "medical-center-dbms",
+    id: "active-recall-system",
     title: "Active Recall System",
     description:
       "AI test maker aiming to imporve active recall by progressing user through the different levels of bloomstaxonomy.",
@@ -309,7 +359,7 @@ export const projects = [
     github: "https://github.com/WahabBasa/BloomAI"
   },
   {
-    id: "dar-al-maha",
+    id: "samir-al-bahr",
     title: "Samir Al Bahr",
     description: "2D animation project that brings to life an adventurous and curious sea creature with a heartfelt mission.",
     image: "https://images.unsplash.com/photo-1628494391268-c9935bc384d5",
@@ -356,7 +406,7 @@ export const projects = [
     link: "https://drive.google.com/file/d/1S0w-KoXIyypQpLRQmVc_cNqDGGbKMDiR/view"
   },
   {
-    id: "edumentor",
+    id: "finance-tracker-app",
     title: "Finance Tracker App",
     description:
       "A user-friendly finance tracking app to help users monitor and manage expenses effectively.",
@@ -393,7 +443,7 @@ export const projects = [
     ],
   },
   {
-    id: "sejda-space",
+    id: "midi-composer-app",
     title: "Midi Composer App",
     description:
       "Music composition app, enabling users to create, edit, and share their musical pieces effortlessly.",
