@@ -528,18 +528,6 @@ export const skills = [
     emoji: "💻"
   },
   {
-    name: "Docker",
-    level: "Expert",
-    category: "backend",
-    emoji: "🐳"
-  },
-  {
-    name: "AWS",
-    level: "Advanced",
-    category: "backend",
-    emoji: "🌐"
-  },
-  {
     name: "Flutter",
     level: "Expert",
     category: "frontend",
@@ -617,30 +605,11 @@ export const skills = [
     category: "ai",
     emoji: "📊"
   },
-  {
-    name: "Firebase",
-    level: "Expert",
-    category: "backend",
-    emoji: "🔥"
-  },
-  {
-    name: "RESTful APIs",
-    level: "Expert",
-    category: "backend",
-    emoji: "🔌"
-  },
-  {
-    name: "SQL",
-    level: "Advanced",
-    category: "backend",
-    emoji: "💾"
-  },
-  {
-    name: "Git",
-    level: "Advanced",
-    category: "backend",
-    emoji: "🔄"
-  },
+  { name: "Unity", level: "Expert", category: "design", emoji: "🎮" },
+  { name: "Unreal Engine", level: "Intermediate", category: "design", emoji: "🕹️" },
+  { name: "Blender", level: "Advanced", category: "design", emoji: "🧱" },
+  { name: "Photoshop", level: "Intermediate", category: "design", emoji: "🖼️" },
+  { name: "Cursor", level: "Advanced", category: "design", emoji: "🖱️" }
 ]
 
 export const certifications = [

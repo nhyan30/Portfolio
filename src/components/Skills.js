@@ -80,9 +80,9 @@ const Skills = () => {
       skills: skills.filter(s => s.category === "ai")
     },
     {
-      title: "Backend Development",
+      title: "Game & Design Tools",
       icon: <Server size={24} />,
-      skills: skills.filter(s => s.category === "backend")
+      skills: skills.filter(s => s.category === "design")
     }
   ]
 
