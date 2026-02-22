@@ -5,7 +5,7 @@ export const projects = [
     clickable: false,
     description:
       "A multi-screen installation with shader-based transitions reacting to keyboard-triggered object inputs.",
-    image: "https://drive.google.com/thumbnail?id=1SE3EOQTXI8Y0O5zBTC0ewdDf_SdSa6Tr",
+    image: "https://drive.google.com/thumbnail?id=1mW6bBLEoP56zkkfWRuPg-Ld7flHm3Kl6",
     tags: ["Interactive", "Custom Shader", "Multi-Screen"],
     emoji: "🌊",
   },
@@ -15,7 +15,7 @@ export const projects = [
     clickable: false,
     description:
       "A multiplayer racing experience where pedaling speed drives real-time progress along spline-based tracks.",
-    image: "https://drive.google.com/thumbnail?id=1uZU_QEO6q0XiN83bKZCrg_DQwDotYRt2",
+    image: "https://drive.google.com/thumbnail?id=1olS8YjMBT-CooK_nw9u5DKTeQdqP4TDQ",
     tags: ["Multiplayer", "Dreamteck Splines"],
     emoji: "🚴",
   },
@@ -25,7 +25,7 @@ export const projects = [
     clickable: false,
     description:
       "A Python-powered robotic game using NFC and serial communication with interactive LEDs.",
-    image: "https://drive.google.com/thumbnail?id=15BDJ3mMv-XYY-_ZHbdAg4wi068ZnO-zh",
+    image: "https://drive.google.com/thumbnail?id=1m4QTYOPYBZGoDSzhEIvzvm5D6nTfFogg",
     tags: ["Python", "Robotics", "Interactive"],
     emoji: "🤖",
   },
@@ -35,7 +35,7 @@ export const projects = [
     clickable: false,
     description:
       "A physics-driven installation where kicking a ball alters a 3D digital wall in real time.",
-    image: "https://drive.google.com/thumbnail?id=1tu-2FyFEO483BhERK16mnlsCjuIlSZB8",
+    image: "https://drive.google.com/thumbnail?id=1TjIjeGRpi__cvxnqJ4tyXbuL1k8HQu0s",
     tags: ["Physics", "Interactive"],
     emoji: "⚽",
   },
@@ -45,7 +45,7 @@ export const projects = [
     clickable: false,
     description:
       "A bilingual tablet-based quiz displaying personalized results on-screen and via email.",
-    image: "https://drive.google.com/thumbnail?id=1cBhbXMZZ8pfNr7A-gu4k1G2e5SpcGakP",
+    image: "https://drive.google.com/thumbnail?id=1BDelOOeQ9ThivaItjPDknfme5ZfegKWu",
     tags: ["Quiz", "Interactive", "Bilingual"],
     emoji: "🧠",
   },
