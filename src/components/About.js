@@ -46,10 +46,10 @@ const About = () => {
             </div>
           </div>
           <p className="text-lg text-gray-700 mb-6 text-center">
-          As an Software Engineer and AI Engineer, I bridge cutting-edge AI with real-world impact. My work spans machine learning, game development, and Flutter development, solving challenges in education, urban planning, and user behavior analysis.
+          As a Software Engineer and AI Engineer, I bridge cutting-edge AI with real-world impact. My work spans machine learning, game development, and Flutter development, solving challenges in education, urban planning, and user behavior analysis.
           </p>
           <p className="text-lg text-gray-700 mb-6 text-center">
-          With expertise in Flutter development, machine learning, deep learning, and LLMs, I've successfully delivered projects ranging from intelligent mobile and web applications to scalable, user-friendly systems in production. My role as a Member of the UOS ACM Student Chapter has further enhanced my community engagement and collaborative innovation.
+          I build software, games, mobile apps, and interactive systems that merge intelligence with usability. Through hands-on experience in machine learning, deep learning, and large language models (LLMs), I’ve delivered projects that transform ideas into functional, scalable, and user-friendly solutions across multiple platforms.
           </p>
           <div className="flex justify-center gap-4 mt-8">
             <motion.a

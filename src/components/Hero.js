@@ -6,6 +6,7 @@ import {
   Github,
   Linkedin,
   Mail,
+  Gamepad2
   // Instagram
 } from "lucide-react"
 import { useScrollTo } from "../hooks/useScrollTo.js"
@@ -37,6 +38,11 @@ const Hero = () => {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/nahyan-nabil/",
       label: "LinkedIn"
+    },
+    {
+      icon: Gamepad2,
+      href: "https://nhyan30.itch.io/",
+      label: "itch.io"
     },
     {
       icon: Mail, 

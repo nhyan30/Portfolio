@@ -1,5 +1,47 @@
 export const projects = [
+  {
+  id: "mountain-lake",
+  title: "Mountain Lake",
+  description: "An Unreal Engine 5.7 project featuring a natural outdoor scene with a calm riverside, rustic wooden cabin, and distant snow-covered mountains.",
+  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", 
+  tags: ["Unreal Engine", "PCG Framework", "Nanite"],
+  emoji: "🏞️",
+  duration: "1 week",
+  teamSize: 1,
+  role: "Environment Artist & UE5 Developer",
+  features: [
+    "Realistic foliage using Nanite for optimized performance",
+    "Landscape auto-material for dynamic terrain texturing",
+    "Scenic composition with riverside, cabin, and snow-covered mountains",
+    "Optimized for high visual fidelity with minimal performance cost"
+  ],
+  technologies: [
     {
+      name: "PCG Procedural Content Generation Framework",
+      description: "Automates generation of complex natural environments"
+    },
+    {
+      name: "Nanite",
+      description: "High-performance virtualized geometry for detailed foliage and assets"
+    },
+    {
+      name: "Landscape Auto-Material",
+      description: "Dynamic terrain material system for realistic texturing"
+    }
+  ],
+  challenges: [
+    "Creating realistic outdoor environments procedurally",
+    "Optimizing high-detail Nanite assets for performance",
+    "Balancing aesthetic composition with technical limitations"
+  ],
+  solutions: [
+    "Used PCG framework to generate varied natural terrain elements",
+    "Implemented Nanite for high-density foliage with min performance hit",
+    "Refined auto-material settings for visually consistent landscapes"
+  ],
+  github: "https://github.com/nhyan30/MountainLake-UE"
+},
+  {
     id: "interactive-splash-wall",
     title: "Interactive Splash Wall",
     clickable: false,
