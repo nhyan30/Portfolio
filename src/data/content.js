@@ -1,5 +1,49 @@
 export const projects = [
   {
+    id: "guess-who-game",
+    title: "Guess Who Game",
+    description: "A culturally unique 'Guess Who' game built with Unity, featuring Arabic-themed characters and both single-player and multiplayer modes across PC and mobile platforms.",
+    image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948",
+    // image: "https://drive.google.com/thumbnail?id=1YRrPbIcEcH11c16GlqQqVftJONutxNQO",
+    tags: ["Unity", "Multiplayer", "Shader Graph"],
+    emoji: "👥",
+    duration: "1 month",
+    teamSize: 1,
+    role: "Lead Game Developer",
+    features: [
+      "Cross-platform support for PC and Mobile",
+      "Real-time multiplayer experience with custom networking logic",
+      "Arabic-themed character designs for cultural relevance",
+      "Dynamic moving background with looping images",
+    ],
+    technologies: [
+      {
+        name: "Unity Engine",
+        description: "Core game development and cross-platform builds"
+      },
+      {
+        name: "Shader Graph",
+        description: "Used for smooth transitions and dynamic background effects"
+      },
+      {
+        name: "Custom Networking",
+        description: "Multiplayer logic built from scratch for low-latency gameplay"
+      }
+    ],
+    challenges: [
+      "Developing a reliable multiplayer networking system from scratch",
+      "Creating seamless visual transitions and dynamic backgrounds",
+      "Optimizing performance for both PC and mobile platforms"
+    ],
+    solutions: [
+      "Implemented a custom socket-based networking logic for full control",
+      "Leveraged Unity Shader Graph for high-performance visual effects",
+      "Designed a responsive UI and optimized assets for cross-platform compatibility"
+    ],
+    github: "https://github.com/nhyan30/GuessWho",
+    link: "https://nhyan30.itch.io/guess-who"
+  },
+  {
   id: "mountain-lake",
   title: "Mountain Lake",
   description: "An Unreal Engine 5.7 project featuring a natural outdoor scene with a calm riverside, rustic wooden cabin, and distant snow-covered mountains.",
@@ -181,6 +225,7 @@ export const projects = [
     github: "https://github.com/nhyan30/RedLightGreenLight-Unity",
     link: "https://nhyan30.itch.io/squid-game"
   },
+  
   {
     id: "facial-expression-detection",
     title: "Facial Expression Detection",
@@ -357,49 +402,49 @@ export const projects = [
     github: "https://github.com/nhyan30/Desert-Reckless-Adventure-3D",
     link : "https://drive.google.com/file/d/1Ipaqg8d1wWfb8SvL64HzfXtJGUzoWlFw/view?usp=sharing"
   },
-  {
-    id: "active-recall-system",
-    title: "Active Recall System",
-    description:
-      "AI test maker aiming to imporve active recall by progressing user through the different levels of bloomstaxonomy.",
-    image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7",
-    tags: ["Python", "Azure OpenAI Service", "Vue 3"],
-    emoji: "🧠",
-    duration: "1 months",
-    teamSize: 4,
-    role: "AI Engineer",
-    features: [
-      "Personalized question generation via Azure OpenAI",
-      "Dynamic difficulty adjustment using Bloom’s Taxonomy",
-      "Continuous performance evaluation and optimization",
-      "Progress tracking with analytics dashboards"
-    ],
-    technologies: [
-      {
-        name: "Python",
-        description: "Backend APIs and performance evaluation logic"
-      },
-      {
-        name: "Azure OpenAI Service",
-        description: "Adaptive question generation and NLP capabilities"
-      },
-      {
-        name: "Vue 3",
-        description: "Frontend interface and visual components"
-      }
-    ],
-    challenges: [
-      "Creating high-quality adaptive question logic",
-      "Ensuring real-time difficulty adjustment performance",
-      "Designing intuitive, engaging learning interfaces"
-    ],
-    solutions: [
-      "Built AI-powered adaptive question generation engine",
-      "Leveraged Azure services for scalable infrastructure",
-      "Created responsive, user-friendly learning interface"
-    ],
-    github: "https://github.com/WahabBasa/BloomAI"
-  },
+  // {
+  //   id: "active-recall-system",
+  //   title: "Active Recall System",
+  //   description:
+  //     "AI test maker aiming to imporve active recall by progressing user through the different levels of bloomstaxonomy.",
+  //   image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7",
+  //   tags: ["Python", "Azure OpenAI Service", "Vue 3"],
+  //   emoji: "🧠",
+  //   duration: "1 months",
+  //   teamSize: 4,
+  //   role: "AI Engineer",
+  //   features: [
+  //     "Personalized question generation via Azure OpenAI",
+  //     "Dynamic difficulty adjustment using Bloom’s Taxonomy",
+  //     "Continuous performance evaluation and optimization",
+  //     "Progress tracking with analytics dashboards"
+  //   ],
+  //   technologies: [
+  //     {
+  //       name: "Python",
+  //       description: "Backend APIs and performance evaluation logic"
+  //     },
+  //     {
+  //       name: "Azure OpenAI Service",
+  //       description: "Adaptive question generation and NLP capabilities"
+  //     },
+  //     {
+  //       name: "Vue 3",
+  //       description: "Frontend interface and visual components"
+  //     }
+  //   ],
+  //   challenges: [
+  //     "Creating high-quality adaptive question logic",
+  //     "Ensuring real-time difficulty adjustment performance",
+  //     "Designing intuitive, engaging learning interfaces"
+  //   ],
+  //   solutions: [
+  //     "Built AI-powered adaptive question generation engine",
+  //     "Leveraged Azure services for scalable infrastructure",
+  //     "Created responsive, user-friendly learning interface"
+  //   ],
+  //   github: "https://github.com/WahabBasa/BloomAI"
+  // },
   {
     id: "samir-al-bahr",
     title: "Samir Al Bahr",

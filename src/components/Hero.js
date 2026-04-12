@@ -163,7 +163,7 @@ const Hero = () => {
           transition={{ delay: animationConfig.delay.medium }}
           className="text-lg md:text-2xl text-gray-400 mb-8 font-light"
         >
-          Software Engineer • UI/UX Designer • Game Developer • AI Engineer
+          Software Engineer • Game Developer • UI/UX Designer • AI Engineer
         </motion.p>
 
         <motion.div

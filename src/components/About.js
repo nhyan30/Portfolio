@@ -62,7 +62,7 @@ const About = () => {
               Schedule a call
             </motion.a>
             <motion.a
-              href="https://drive.google.com/file/d/1ZC33C2wwQbMWlrHnWPg4so3CGBi_ouDw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1aDW167eD-gHZMkstewMZtHEsDZGqCgEj/view?usp=sharing"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
