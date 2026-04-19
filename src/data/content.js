@@ -1,5 +1,48 @@
 export const projects = [
   {
+    id: "matching-cards-game",
+    title: "Matching Cards Game",
+    description: "A fun and engaging Unity game designed to challenge and improve memory skills.",
+    image: "https://images.unsplash.com/photo-1733297190207-06b9190381d5",
+    tags: ["Unity Engine", "C#", "2D", "Puzzle"],
+    emoji: "🃏",
+    duration: "1 month",
+    teamSize: 1,
+    role: "Lead Game Developer",
+    features: [
+      "Cross-platform support for PC and Mobile",
+      "Classic memory matching gameplay",
+      "Score based on number of moves used",
+      "Engaging card flipping animations"
+    ],
+    technologies: [
+      {
+        name: "Unity",
+        description: "Core game development and cross-platform builds"
+      },
+      {
+        name: "C#",
+        description: "Scripting for gameplay logic and card mechanics"
+      },
+      {
+        name: "2D",
+        description: "2D game design and card rendering"
+      }
+    ],
+    challenges: [
+      "Implementing smooth card flipping animations",
+      "Optimizing for both PC and mobile performance",
+      "Designing an intuitive user experience"
+    ],
+    solutions: [
+      "Leveraged Unity's animation system for smooth card transitions",
+      "Optimized assets for cross-platform compatibility",
+      "Designed clean UI focused on gameplay simplicity"
+    ],
+    github: "https://github.com/nhyan30/MatchingCards",
+    link: "https://nhyan30.itch.io/matching-cards"
+  },
+  {
     id: "guess-who-game",
     title: "Guess Who Game",
     description: "A culturally unique 'Guess Who' game built with Unity, featuring Arabic-themed characters and both single-player and multiplayer modes across PC and mobile platforms.",
