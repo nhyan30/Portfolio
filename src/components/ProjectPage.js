@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import { useParams, Link } from "react-router-dom"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import {
   ArrowLeft,
   Github,
@@ -9,10 +9,12 @@ import {
   Calendar,
   Trophy,
   ChevronRight,
+  ChevronLeft,
   Database,
   Globe,
   Code2,
   Layers,
+  Play,
 } from "lucide-react"
 import { projects } from "../data/content.js"
 import animationConfig from "../utils/animationConfig.js"
@@ -46,6 +48,7 @@ const getTechIcon = (techName) => {
 const ProjectDetails = () => {
   const { id } = useParams()
   const project = projects.find(p => p.id === id)
+  const [currentMediaIndex, setCurrentMediaIndex] = useState(0)
 
   if (!project) {
     return (
@@ -65,6 +68,16 @@ const ProjectDetails = () => {
         </motion.div>
       </div>
     )
+  }
+
+  const media = project.media || [{ type: "image", url: project.image }]
+
+  const nextMedia = () => {
+    setCurrentMediaIndex((prev) => (prev + 1) % media.length)
+  }
+
+  const prevMedia = () => {
+    setCurrentMediaIndex((prev) => (prev - 1 + media.length) % media.length)
   }
 
   const fadeInUp = {
@@ -120,14 +133,92 @@ const ProjectDetails = () => {
           animate={{ opacity: 1, y: 0 }}
           className="glass-effect rounded-3xl overflow-hidden"
         >
-          {/* Hero Section */}
-          <div className="relative h-[40vh] md:h-[60vh]">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
+          {/* Hero Section / Slider */}
+          <div className="relative h-[50vh] md:h-[70vh] group">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentMediaIndex}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-full"
+              >
+                {media[currentMediaIndex].type === "video" ? (
+                  <div className="relative w-full h-full">
+                    {media[currentMediaIndex].url.includes("drive.google.com") ? (
+                      <iframe
+                        src={media[currentMediaIndex].url
+                          .replace("/view", "/preview")
+                          .replace("uc?id=", "file/d/")
+                          .replace("?usp=sharing", "")
+                          .replace(/file\/d\/([^/]+)$/, "file/d/$1/preview")
+                          .replace(/file\/d\/([^/?]+)\?.*$/, "file/d/$1/preview")
+                        }
+                        className="w-full h-full border-0"
+                        allow="autoplay; encrypted-media"
+                        title={project.title}
+                      />
+                    ) : (
+                      <video
+                        key={media[currentMediaIndex].url}
+                        src={media[currentMediaIndex].url}
+                        className="w-full h-full object-cover"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="auto"
+                      />
+                    )}
+                    <div className="absolute top-4 left-4 glass-effect p-2 rounded-full pointer-events-none">
+                      <Play size={16} className="text-[#0EA5E9]" />
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={media[currentMediaIndex].url}
+                    alt={`${project.title} - ${currentMediaIndex + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Navigation Arrows */}
+            {media.length > 1 && (
+              <>
+                <button
+                  onClick={prevMedia}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 glass-effect p-3 rounded-full text-white hover:text-[#0EA5E9] transition-all opacity-0 group-hover:opacity-100 z-10"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <button
+                  onClick={nextMedia}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 glass-effect p-3 rounded-full text-white hover:text-[#0EA5E9] transition-all opacity-0 group-hover:opacity-100 z-10"
+                >
+                  <ChevronRight size={24} />
+                </button>
+
+                {/* Dots Indicator */}
+                <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                  {media.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentMediaIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all ${
+                        index === currentMediaIndex
+                          ? "bg-[#0EA5E9] w-6"
+                          : "bg-white/50 hover:bg-white"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none" />
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
               <motion.div {...fadeInUp} className="space-y-4">
                 <h1 className="text-4xl md:text-6xl font-bold flex items-center gap-3">

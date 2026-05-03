@@ -4,10 +4,16 @@ export const projects = [
     title: "Interactive Tesselation Board",
     clickable: true,
     description: "A real-time perspective hit system where user input dynamically generates connected geometry with smooth visual feedback.",
-    // image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853",
     image: "https://drive.google.com/thumbnail?id=1w9p9-0x87G1UR2NMCbnOLchp-g66q-Ip&sz=w1000",
+    media: [
+      { type: "image", url: "https://drive.google.com/thumbnail?id=1w9p9-0x87G1UR2NMCbnOLchp-g66q-Ip&sz=w1000" },
+      { type: "video", url: "https://drive.google.com/file/d/15YgHzt3RswwjEh6zBj-pw7mvpgPm94GB/view" },
+    ],
     tags: ["Real-time Geometry", "Interactive"],
     emoji: "💠",
+    duration: "1 month",
+    teamSize: 1,
+    role: "Lead Developer",
     features: [
       "Dynamic geometry generation from user input",
       "Real-time perspective hit system",
@@ -41,8 +47,11 @@ export const projects = [
     id: "matching-cards-game",
     title: "Matching Cards Game",
     description: "A fun and engaging Unity game designed to challenge and improve memory skills.",
-    // image: "https://images.unsplash.com/photo-1733297190207-06b9190381d5",
     image: "https://drive.google.com/thumbnail?id=1v7K_9ThlCsC2ad6hzRInasqRKUSB0Ftm&sz=w1000",
+    media: [
+      { type: "image", url: "https://drive.google.com/thumbnail?id=1v7K_9ThlCsC2ad6hzRInasqRKUSB0Ftm&sz=w1000" },
+      { type: "video", url: "https://drive.google.com/file/d/1QFbh-PamSf_h8xR6GXFqZCIRRhp7m3Ig/view" },
+    ],
     tags: ["Unity Engine", "C#", "2D", "Puzzle"],
     emoji: "🃏",
     duration: "1 month",
@@ -86,7 +95,10 @@ export const projects = [
     title: "Guess Who Game",
     description: "A culturally unique 'Guess Who' game built with Unity, featuring Arabic-themed characters and both single-player and multiplayer modes across PC and mobile platforms.",
     image: "https://drive.google.com/thumbnail?id=1YRrPbIcEcH11c16GlqQqVftJONutxNQO&sz=w1000",
-    // image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948",
+    media: [  
+      { type: "image", url: "https://drive.google.com/thumbnail?id=1YRrPbIcEcH11c16GlqQqVftJONutxNQO&sz=w1000" },
+      { type: "video", url: "https://drive.google.com/file/d/1rIxyr592-XIiH-gX9G6d6Hr_e7x3Rzg7/view" },
+    ],
     tags: ["Unity", "Multiplayer", "Shader Graph"],
     emoji: "👥",
     duration: "1 month",
@@ -131,6 +143,12 @@ export const projects = [
   description: "An Unreal Engine 5.7 project featuring a natural outdoor scene with a calm riverside, rustic wooden cabin, and distant snow-covered mountains.",
   // image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
   image: "https://drive.google.com/thumbnail?id=1PpHzfBv8alOj3AoWw3mgtqs7bHKaDunn&sz=w1000",
+  media: [  
+      { type: "image", url: "https://drive.google.com/thumbnail?id=1PpHzfBv8alOj3AoWw3mgtqs7bHKaDunn&sz=w1000" },
+      { type: "image", url: "https://drive.google.com/thumbnail?id=1W1S1wooaPDCzNehgX92-wf3VxfoBBQqx&sz=w1000" },
+      { type: "image", url: "https://drive.google.com/thumbnail?id=1ismNuaOtEedcrWfQ5hlzaq7mQVpqpcae&sz=w1000" },
+      { type: "video", url: "https://drive.google.com/file/d/18mtSUC1uRWymrt-4qVJ-yO4iuyWePGfE/view" },
+    ],
   tags: ["Unreal Engine", "PCG Framework", "Nanite"],
   emoji: "🏞️",
   duration: "1 week",
@@ -273,6 +291,10 @@ export const projects = [
     description:
       "Unity project is a reimagined, high-intensity version of the iconic “Red Light, Green Light” game inspired by Squid Game.",
     image: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49",
+    media: [
+      { type: "image", url: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49" },
+      { type: "image", url: "https://images.unsplash.com/photo-1665041982909-8a86864a1e49" }
+    ],
     tags: ["Unity Engine", "C#", "Rigidbody Physics"],
     emoji: "🎮",
     duration: "3 months",
