@@ -1,9 +1,48 @@
 export const projects = [
   {
+    id: "interactive-tesselation-board",
+    title: "Interactive Tesselation Board",
+    clickable: true,
+    description: "A real-time perspective hit system where user input dynamically generates connected geometry with smooth visual feedback.",
+    // image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853",
+    image: "https://drive.google.com/thumbnail?id=1w9p9-0x87G1UR2NMCbnOLchp-g66q-Ip&sz=w2000",
+    tags: ["Real-time Geometry", "Interactive"],
+    emoji: "💠",
+    features: [
+      "Dynamic geometry generation from user input",
+      "Real-time perspective hit system",
+      "Stable and visually consistent point connection",
+      "Clean triangle distribution avoiding overlapping shapes"
+    ],
+    technologies: [
+      {
+        name: "Delaunay Triangulation",
+        description: "Algorithm for generating stable and non-overlapping triangle meshes"
+      },
+      {
+        name: "Real-time Geometry Engine",
+        description: "Handles dynamic updates and rendering of connected points"
+      }
+    ],
+    challenges: [
+      "Ensuring real-time performance with increasing complexity",
+      "Maintaining visual consistency during rapid interactions",
+      "Avoiding distorted or overlapping shapes in dynamic meshes"
+    ],
+    solutions: [
+      "Implemented Delaunay triangulation for stable mesh generation",
+      "Optimized spatial updates for real-time responsiveness",
+      "Refined hit detection for precise geometry placement"
+    ],
+    github : "https://github.com/nhyan30/TessellationArt",
+    link : "https://nhyan30.itch.io/tessellationart",
+  },
+  {
     id: "matching-cards-game",
     title: "Matching Cards Game",
     description: "A fun and engaging Unity game designed to challenge and improve memory skills.",
-    image: "https://images.unsplash.com/photo-1733297190207-06b9190381d5",
+    // image: "https://images.unsplash.com/photo-1733297190207-06b9190381d5",
+    image: "https://drive.google.com/thumbnail?id=1fBqThuAUY-nHUxj_6VfRabDcG-qnXEO0&sz=w2000",
     tags: ["Unity Engine", "C#", "2D", "Puzzle"],
     emoji: "🃏",
     duration: "1 month",
@@ -46,8 +85,8 @@ export const projects = [
     id: "guess-who-game",
     title: "Guess Who Game",
     description: "A culturally unique 'Guess Who' game built with Unity, featuring Arabic-themed characters and both single-player and multiplayer modes across PC and mobile platforms.",
-    image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948",
-    // image: "https://drive.google.com/thumbnail?id=1YRrPbIcEcH11c16GlqQqVftJONutxNQO",
+    image: "https://drive.google.com/thumbnail?id=1YRrPbIcEcH11c16GlqQqVftJONutxNQO&sz=w2000",
+    // image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948",
     tags: ["Unity", "Multiplayer", "Shader Graph"],
     emoji: "👥",
     duration: "1 month",
@@ -90,7 +129,8 @@ export const projects = [
   id: "mountain-lake",
   title: "Mountain Lake",
   description: "An Unreal Engine 5.7 project featuring a natural outdoor scene with a calm riverside, rustic wooden cabin, and distant snow-covered mountains.",
-  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", 
+  // image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+  image: "https://drive.google.com/thumbnail?id=1PpHzfBv8alOj3AoWw3mgtqs7bHKaDunn&sz=w2000",
   tags: ["Unreal Engine", "PCG Framework", "Nanite"],
   emoji: "🏞️",
   duration: "1 week",
@@ -126,55 +166,56 @@ export const projects = [
     "Implemented Nanite for high-density foliage with min performance hit",
     "Refined auto-material settings for visually consistent landscapes"
   ],
-  github: "https://github.com/nhyan30/MountainLake-UE"
+  github: "https://github.com/nhyan30/MountainLake-UE",
+  link: "https://www.linkedin.com/feed/update/urn:li:activity:7427967871403773953/"
 },
   {
     id: "interactive-splash-wall",
     title: "Interactive Splash Wall",
-    clickable: false,
+    clickable: true,
     description:
       "A multi-screen installation with shader-based transitions reacting to keyboard-triggered object inputs.",
-    image: "https://drive.google.com/thumbnail?id=1mW6bBLEoP56zkkfWRuPg-Ld7flHm3Kl6",
+    image: "https://drive.google.com/thumbnail?id=1mW6bBLEoP56zkkfWRuPg-Ld7flHm3Kl6&sz=w2000",
     tags: ["Interactive", "Custom Shader", "Multi-Screen"],
     emoji: "🌊",
   },
     {
     id: "cycling-challenge",
     title: "Cycling Challenge",
-    clickable: false,
+    clickable: true,
     description:
       "A multiplayer racing experience where pedaling speed drives real-time progress along spline-based tracks.",
-    image: "https://drive.google.com/thumbnail?id=1olS8YjMBT-CooK_nw9u5DKTeQdqP4TDQ",
+    image: "https://drive.google.com/thumbnail?id=1olS8YjMBT-CooK_nw9u5DKTeQdqP4TDQ&sz=w2000",
     tags: ["Multiplayer", "Dreamteck Splines"],
     emoji: "🚴",
   },
       {
     id: "tictactoe",
     title: "TicTacToe Robotic Arm",
-    clickable: false,
+    clickable: true,
     description:
       "A Python-powered robotic game using NFC and serial communication with interactive LEDs.",
-    image: "https://drive.google.com/thumbnail?id=1m4QTYOPYBZGoDSzhEIvzvm5D6nTfFogg",
+    image: "https://drive.google.com/thumbnail?id=1m4QTYOPYBZGoDSzhEIvzvm5D6nTfFogg&sz=w2000",
     tags: ["Python", "Robotics", "Interactive"],
     emoji: "🤖",
   },
       {
     id: "interactive-wall",
     title: "Interactive Wall",
-    clickable: false,
+    clickable: true,
     description:
       "A physics-driven installation where kicking a ball alters a 3D digital wall in real time.",
-    image: "https://drive.google.com/thumbnail?id=1TjIjeGRpi__cvxnqJ4tyXbuL1k8HQu0s",
+    image: "https://drive.google.com/thumbnail?id=1TjIjeGRpi__cvxnqJ4tyXbuL1k8HQu0s&sz=w2000",
     tags: ["Physics", "Interactive"],
     emoji: "⚽",
   },
       {
     id: "mirrors-of-the-self",
     title: "Interactive Quiz",
-    clickable: false,
+    clickable: true,
     description:
       "A bilingual tablet-based quiz displaying personalized results on-screen and via email.",
-    image: "https://drive.google.com/thumbnail?id=1BDelOOeQ9ThivaItjPDknfme5ZfegKWu",
+    image: "https://drive.google.com/thumbnail?id=1BDelOOeQ9ThivaItjPDknfme5ZfegKWu&sz=w2000",
     tags: ["Quiz", "Interactive", "Bilingual"],
     emoji: "🧠",
   },
