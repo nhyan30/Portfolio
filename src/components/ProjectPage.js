@@ -128,13 +128,58 @@ const ProjectDetails = () => {
           </div>
         </nav>
 
+        {/* Project Header */}
+        <motion.div 
+          {...fadeInUp}
+          className="mb-12 space-y-6"
+        >
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-7xl font-bold flex items-center gap-4">
+              <span className="text-5xl md:text-7xl">{project.emoji}</span>
+              {project.title}
+            </h1>
+            <div className="flex flex-wrap gap-3">
+              {project.tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-1.5 text-sm glass-effect rounded-full text-[#0EA5E9] font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Project Meta Info */}
+          <div className="flex flex-wrap gap-4 text-gray-300">
+            {project.teamSize && (
+              <div className="flex items-center gap-2 glass-effect px-4 py-2 rounded-xl">
+                <Users size={18} className="text-[#0EA5E9]" />
+                <span className="text-sm">Team of {project.teamSize}</span>
+              </div>
+            )}
+            {project.duration && (
+              <div className="flex items-center gap-2 glass-effect px-4 py-2 rounded-xl">
+                <Calendar size={18} className="text-[#0EA5E9]" />
+                <span className="text-sm">{project.duration}</span>
+              </div>
+            )}
+            {project.role && (
+              <div className="flex items-center gap-2 glass-effect px-4 py-2 rounded-xl">
+                <Trophy size={18} className="text-[#0EA5E9]" />
+                <span className="text-sm">{project.role}</span>
+              </div>
+            )}
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="glass-effect rounded-3xl overflow-hidden"
+          className="glass-effect rounded-[2rem] overflow-hidden"
         >
           {/* Hero Section / Slider */}
-          <div className="relative h-[50vh] md:h-[70vh] group">
+          <div className="relative h-[50vh] md:h-[75vh] group">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentMediaIndex}
@@ -145,7 +190,7 @@ const ProjectDetails = () => {
                 className="w-full h-full"
               >
                 {media[currentMediaIndex].type === "video" ? (
-                  <div className="relative w-full h-full">
+                  <div className="relative w-full h-full bg-black/40">
                     {media[currentMediaIndex].url.includes("drive.google.com") ? (
                       <iframe
                         src={media[currentMediaIndex].url
@@ -158,6 +203,7 @@ const ProjectDetails = () => {
                         className="w-full h-full border-0"
                         allow="autoplay; encrypted-media"
                         title={project.title}
+                        loading="lazy"
                       />
                     ) : (
                       <video
@@ -171,7 +217,7 @@ const ProjectDetails = () => {
                         preload="auto"
                       />
                     )}
-                    <div className="absolute top-4 left-4 glass-effect p-2 rounded-full pointer-events-none">
+                    <div className="absolute top-4 left-4 glass-effect p-2 rounded-full pointer-events-none z-20">
                       <Play size={16} className="text-[#0EA5E9]" />
                     </div>
                   </div>
@@ -190,19 +236,19 @@ const ProjectDetails = () => {
               <>
                 <button
                   onClick={prevMedia}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 glass-effect p-3 rounded-full text-white hover:text-[#0EA5E9] transition-all opacity-0 group-hover:opacity-100 z-10"
+                  className="absolute left-6 top-1/2 -translate-y-1/2 glass-effect p-4 rounded-full text-white hover:text-[#0EA5E9] transition-all opacity-0 group-hover:opacity-100 z-30"
                 >
-                  <ChevronLeft size={24} />
+                  <ChevronLeft size={28} />
                 </button>
                 <button
                   onClick={nextMedia}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 glass-effect p-3 rounded-full text-white hover:text-[#0EA5E9] transition-all opacity-0 group-hover:opacity-100 z-10"
+                  className="absolute right-6 top-1/2 -translate-y-1/2 glass-effect p-4 rounded-full text-white hover:text-[#0EA5E9] transition-all opacity-0 group-hover:opacity-100 z-30"
                 >
-                  <ChevronRight size={24} />
+                  <ChevronRight size={28} />
                 </button>
 
                 {/* Dots Indicator */}
-                <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-30 bg-black/20 backdrop-blur-md px-4 py-2 rounded-full">
                   {media.map((_, index) => (
                     <button
                       key={index}
@@ -210,54 +256,13 @@ const ProjectDetails = () => {
                       className={`w-2 h-2 rounded-full transition-all ${
                         index === currentMediaIndex
                           ? "bg-[#0EA5E9] w-6"
-                          : "bg-white/50 hover:bg-white"
+                          : "bg-white/40 hover:bg-white"
                       }`}
                     />
                   ))}
                 </div>
               </>
             )}
-
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none" />
-            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-              <motion.div {...fadeInUp} className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold flex items-center gap-3">
-                  {project.emoji} {project.title}
-                </h1>
-                <div className="flex flex-wrap gap-3">
-                  {project.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="px-4 py-1.5 text-sm glass-effect rounded-full text-[#0EA5E9] hover:scale-105 transition-transform cursor-default"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Project Meta Info */}
-                <div className="flex flex-wrap gap-6 text-gray-300 pt-4">
-                  {project.teamSize && (
-                    <div className="flex items-center gap-2 glass-effect px-4 py-2 rounded-full">
-                      <Users size={18} className="text-[#0EA5E9]" />
-                      <span>Team of {project.teamSize}</span>
-                    </div>
-                  )}
-                  {project.duration && (
-                    <div className="flex items-center gap-2 glass-effect px-4 py-2 rounded-full">
-                      <Calendar size={18} className="text-[#0EA5E9]" />
-                      <span>{project.duration}</span>
-                    </div>
-                  )}
-                  {project.role && (
-                    <div className="flex items-center gap-2 glass-effect px-4 py-2 rounded-full">
-                      <Trophy size={18} className="text-[#0EA5E9]" />
-                      <span>{project.role}</span>
-                    </div>
-                  )}
-                </div>
-              </motion.div>
-            </div>
           </div>
 
           <div className="p-8 md:p-12 space-y-16">
