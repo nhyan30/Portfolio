@@ -1,13 +1,36 @@
 export const projects = [
   {
+    id: "adventure-game",
+    title: "Adventure Game",
+    description: "Developed a 3D adventure game as a hands-on project to deepen Unreal Engine 5 and Blueprint gameplay-development skills.",
+    image: "https://drive.google.com/thumbnail?id=1lxb_T0auHDgFIc0htj0oMGUNQlALtg0H&sz=w1000",
+    media: [
+      { type: "video", url: "https://www.youtube.com/watch?v=nxuOCLJM6eM" }
+    ],
+    tags: ["Unreal Engine 5", "Blueprints", "3D Adventure"],
+    emoji: "🎮",
+    technologies: [
+      {
+        name: "Unreal Engine 5",
+        description: "Game engine used to develop the 3D adventure game"
+      },
+      {
+        name: "Blueprints",
+        description: "Visual scripting for gameplay development"
+      }
+    ],
+    link: "https://www.linkedin.com/posts/nahyan-nabil_unrealengine5-unrealengine-gamedevelopment-activity-7515684570978054144-TYl9",
+    github: "https://github.com/nhyan30/AdventureGame"
+  },
+  {
     id: "interactive-tesselation-board",
     title: "Interactive Tesselation Board",
     clickable: true,
     description: "A real-time perspective hit system where user input dynamically generates connected geometry with smooth visual feedback.",
-    image: "https://drive.google.com/thumbnail?id=1w9p9-0x87G1UR2NMCbnOLchp-g66q-Ip&sz=w1000",
+    image: "https://drive.google.com/thumbnail?id=1T3PzFzrczmx7ZiZT2XgYDy_HOjnnB3q9&sz=w1000",
     media: [
       { type: "image", url: "https://drive.google.com/thumbnail?id=1w9p9-0x87G1UR2NMCbnOLchp-g66q-Ip&sz=w1000" },
-      { type: "video", url: "https://drive.google.com/file/d/15YgHzt3RswwjEh6zBj-pw7mvpgPm94GB/view" },
+      { type: "video", url: "https://www.youtube.com/watch?v=IFO1GWGcEEU" },
     ],
     tags: ["Real-time Geometry", "Interactive"],
     emoji: "💠",
@@ -49,8 +72,7 @@ export const projects = [
     description: "A fun and engaging Unity game designed to challenge and improve memory skills.",
     image: "https://drive.google.com/thumbnail?id=1v7K_9ThlCsC2ad6hzRInasqRKUSB0Ftm&sz=w1000",
     media: [
-      { type: "image", url: "https://drive.google.com/thumbnail?id=1v7K_9ThlCsC2ad6hzRInasqRKUSB0Ftm&sz=w1000" },
-      { type: "video", url: "https://drive.google.com/file/d/1QFbh-PamSf_h8xR6GXFqZCIRRhp7m3Ig/view" },
+      { type: "video", url: "https://www.youtube.com/watch?v=a2N93euGqMU" },
     ],
     tags: ["Unity Engine", "C#", "2D", "Puzzle"],
     emoji: "🃏",
@@ -96,8 +118,7 @@ export const projects = [
     description: "A culturally unique 'Guess Who' game built with Unity, featuring Arabic-themed characters and both single-player and multiplayer modes across PC and mobile platforms.",
     image: "https://drive.google.com/thumbnail?id=1YRrPbIcEcH11c16GlqQqVftJONutxNQO&sz=w1000",
     media: [  
-      { type: "image", url: "https://drive.google.com/thumbnail?id=1YRrPbIcEcH11c16GlqQqVftJONutxNQO&sz=w1000" },
-      { type: "video", url: "https://drive.google.com/file/d/1rIxyr592-XIiH-gX9G6d6Hr_e7x3Rzg7/view" },
+      { type: "video", url: "https://www.youtube.com/watch?v=qptkfkqxqkA" },
     ],
     tags: ["Unity", "Multiplayer", "Shader Graph"],
     emoji: "👥",
@@ -147,7 +168,7 @@ export const projects = [
       { type: "image", url: "https://drive.google.com/thumbnail?id=1PpHzfBv8alOj3AoWw3mgtqs7bHKaDunn&sz=w1000" },
       { type: "image", url: "https://drive.google.com/thumbnail?id=1W1S1wooaPDCzNehgX92-wf3VxfoBBQqx&sz=w1000" },
       { type: "image", url: "https://drive.google.com/thumbnail?id=1ismNuaOtEedcrWfQ5hlzaq7mQVpqpcae&sz=w1000" },
-      { type: "video", url: "https://drive.google.com/file/d/18mtSUC1uRWymrt-4qVJ-yO4iuyWePGfE/view" },
+      { type: "video", url: "https://www.youtube.com/watch?v=L2f88ZpXoAM" },
     ],
   tags: ["Unreal Engine", "PCG Framework", "Nanite"],
   emoji: "🏞️",
@@ -187,6 +208,7 @@ export const projects = [
   github: "https://github.com/nhyan30/MountainLake-UE",
   link: "https://www.linkedin.com/feed/update/urn:li:activity:7427967871403773953/"
 },
+
   {
     id: "interactive-splash-wall",
     title: "Interactive Splash Wall",
@@ -219,11 +241,14 @@ export const projects = [
   },
       {
     id: "interactive-wall",
-    title: "Interactive Wall",
+    title: "Football Wall",
     clickable: true,
     description:
       "A physics-driven installation where kicking a ball alters a 3D digital wall in real time.",
-    image: "https://drive.google.com/thumbnail?id=1TjIjeGRpi__cvxnqJ4tyXbuL1k8HQu0s&sz=w1000",
+    image: "https://drive.google.com/thumbnail?id=1PBV1MH1q_efYYqD1KvOr9dGpdu3YmynH&sz=w1000",
+    media: [  
+      { type: "video", url: "https://www.youtube.com/watch?v=n2fIqTaYzDY" },
+    ],
     tags: ["Physics", "Interactive"],
     emoji: "⚽",
     github : "https://github.com/nhyan30/InteractiveFootballWall",
@@ -553,53 +578,53 @@ export const projects = [
   //   ],
   //   github: "https://github.com/WahabBasa/BloomAI"
   // },
-  {
-    id: "samir-al-bahr",
-    title: "Samir Al Bahr",
-    description: "2D animation project that brings to life an adventurous and curious sea creature with a heartfelt mission.",
-    image: "https://images.unsplash.com/photo-1628494391268-c9935bc384d5",
-    tags: ["Krita", "Adobe After Effects", "Miro"],
-    emoji: "📚",
-    duration: "4 months",
-    teamSize: 1,
-    role: "2D Character Designer",
-    features: [
-      "Expressive 2D character animation sequences",
-      "Hand-drawn designs crafted in Krita",
-      "Three-scene narrative with comedic elements",
-      "Rich visual dictionary for world-building",
-      "Dynamic storytelling with playful motion",
-      "Character-driven exploration and emotional arc"
-    ],
-    technologies: [
-      {
-        name: "Krita",
-        description: "Digital illustration for character design"
-      },
-      {
-        name: "Adobe After Effects",
-        description: "2D animation and scene composition"
-      },
-      {
-        name: "Miro",
-        description: "Visual dictionary and concept boards"
-      }
-    ],
-    challenges: [
-      "Creating fluid, expressive character animations",
-      "Developing a cohesive visual storytelling style",
-      "Balancing humor with emotional depth",
-      "Designing unique underwater world elements"
-    ],
-    solutions: [
-      "Sketched detailed storyboards for clear direction",
-      "Used Krita for consistent visual design",
-      "Applied After Effects for smooth animation",
-      "Created a Miro board to organize references"
-    ],
-    github: "https://github.com/nhyan30/Samir-2d-animation",
-    link: "https://drive.google.com/file/d/1S0w-KoXIyypQpLRQmVc_cNqDGGbKMDiR/view"
-  },
+  // {
+  //   id: "samir-al-bahr",
+  //   title: "Samir Al Bahr",
+  //   description: "2D animation project that brings to life an adventurous and curious sea creature with a heartfelt mission.",
+  //   image: "https://images.unsplash.com/photo-1628494391268-c9935bc384d5",
+  //   tags: ["Krita", "Adobe After Effects", "Miro"],
+  //   emoji: "📚",
+  //   duration: "4 months",
+  //   teamSize: 1,
+  //   role: "2D Character Designer",
+  //   features: [
+  //     "Expressive 2D character animation sequences",
+  //     "Hand-drawn designs crafted in Krita",
+  //     "Three-scene narrative with comedic elements",
+  //     "Rich visual dictionary for world-building",
+  //     "Dynamic storytelling with playful motion",
+  //     "Character-driven exploration and emotional arc"
+  //   ],
+  //   technologies: [
+  //     {
+  //       name: "Krita",
+  //       description: "Digital illustration for character design"
+  //     },
+  //     {
+  //       name: "Adobe After Effects",
+  //       description: "2D animation and scene composition"
+  //     },
+  //     {
+  //       name: "Miro",
+  //       description: "Visual dictionary and concept boards"
+  //     }
+  //   ],
+  //   challenges: [
+  //     "Creating fluid, expressive character animations",
+  //     "Developing a cohesive visual storytelling style",
+  //     "Balancing humor with emotional depth",
+  //     "Designing unique underwater world elements"
+  //   ],
+  //   solutions: [
+  //     "Sketched detailed storyboards for clear direction",
+  //     "Used Krita for consistent visual design",
+  //     "Applied After Effects for smooth animation",
+  //     "Created a Miro board to organize references"
+  //   ],
+  //   github: "https://github.com/nhyan30/Samir-2d-animation",
+  //   link: "https://drive.google.com/file/d/1S0w-KoXIyypQpLRQmVc_cNqDGGbKMDiR/view"
+  // },
   {
     id: "finance-tracker-app",
     title: "Finance Tracker App",

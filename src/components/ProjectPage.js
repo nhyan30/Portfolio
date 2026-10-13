@@ -14,10 +14,18 @@ import {
   Globe,
   Code2,
   Layers,
-  Play,
 } from "lucide-react"
 import { projects } from "../data/content.js"
 import animationConfig from "../utils/animationConfig.js"
+
+const getYouTubeVideoId = (url) => {
+  const videoUrl = new URL(url)
+  const videoId = videoUrl.hostname === "youtu.be"
+    ? videoUrl.pathname.slice(1)
+    : videoUrl.searchParams.get("v") || videoUrl.pathname.match(/\/(?:embed|shorts)\/([^/]+)/)?.[1]
+
+  return /^[\w-]{11}$/.test(videoId || "") ? videoId : null
+}
 
 const getTechIcon = (techName) => {
   const iconMap = {
@@ -85,6 +93,10 @@ const ProjectDetails = () => {
     animate: { opacity: 1, y: 0 },
     transition: { duration: animationConfig.duration.fast }
   }
+  const activeMedia = media[currentMediaIndex]
+  const youtubeVideoId = activeMedia.type === "video"
+    ? getYouTubeVideoId(activeMedia.url)
+    : null
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black/20 to-black/90 text-white">
@@ -189,26 +201,20 @@ const ProjectDetails = () => {
                 transition={{ duration: 0.5 }}
                 className="w-full h-full"
               >
-                {media[currentMediaIndex].type === "video" ? (
+                {activeMedia.type === "video" ? (
                   <div className="relative w-full h-full bg-black/40">
-                    {media[currentMediaIndex].url.includes("drive.google.com") ? (
+                    {youtubeVideoId ? (
                       <iframe
-                        src={media[currentMediaIndex].url
-                          .replace("/view", "/preview")
-                          .replace("uc?id=", "file/d/")
-                          .replace("?usp=sharing", "")
-                          .replace(/file\/d\/([^/]+)$/, "file/d/$1/preview")
-                          .replace(/file\/d\/([^/?]+)\?.*$/, "file/d/$1/preview")
-                        }
+                        src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}?autoplay=1&playsinline=1&loop=1&playlist=${youtubeVideoId}`}
                         className="w-full h-full border-0"
-                        allow="autoplay; encrypted-media"
+                        allow="autoplay; encrypted-media; picture-in-picture"
                         title={project.title}
-                        loading="lazy"
+                        allowFullScreen
                       />
                     ) : (
                       <video
-                        key={media[currentMediaIndex].url}
-                        src={media[currentMediaIndex].url}
+                        key={activeMedia.url}
+                        src={activeMedia.url}
                         className="w-full h-full object-cover"
                         autoPlay
                         muted
@@ -217,13 +223,10 @@ const ProjectDetails = () => {
                         preload="auto"
                       />
                     )}
-                    <div className="absolute top-4 left-4 glass-effect p-2 rounded-full pointer-events-none z-20">
-                      <Play size={16} className="text-[#0EA5E9]" />
-                    </div>
                   </div>
                 ) : (
                   <img
-                    src={media[currentMediaIndex].url}
+                    src={activeMedia.url}
                     alt={`${project.title} - ${currentMediaIndex + 1}`}
                     className="w-full h-full object-cover"
                   />
