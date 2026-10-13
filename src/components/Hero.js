@@ -6,7 +6,8 @@ import {
   Github,
   Linkedin,
   Mail,
-  Gamepad2
+  Gamepad2,
+  Video
   // Instagram
 } from "lucide-react"
 import { useScrollTo } from "../hooks/useScrollTo.js"
@@ -190,9 +191,24 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        <motion.div className="w-full px-4 sm:px-0 max-w-xs sm:max-w-none mb-20 mx-auto">
+        <motion.div className="w-full px-4 sm:px-0 max-w-xs sm:max-w-none mb-20 mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
           <motion.button
             onClick={() => window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2X9L4RyA4jlrFHXmfLIsAQ9lnm8AWkDd9XoOslSVUdZ7FTRse8Ti4rf9ICi3l7t7tbZs0JgPvg?gv=true", '_blank')}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: animationConfig.delay.long }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full sm:w-auto inline-flex items-center justify-center glass-effect text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium
+                     border border-[#0EA5E9] hover:bg-[#0EA5E9] transition-all duration-200"
+          >
+            <Video className="mr-2" size={18} />
+            Schedule a call
+          </motion.button>
+          <motion.a
+            href="https://drive.google.com/file/d/1WY31rxkDxz2ZGwsQJO8HZun2C-4JzAVM/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: animationConfig.delay.long }}
@@ -201,13 +217,13 @@ const Hero = () => {
             className="w-full sm:w-auto glass-effect text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium
                      border border-[#0EA5E9] hover:bg-[#0EA5E9] transition-all duration-200"
           >
-            Book an appointment
-          </motion.button>
+            View CV
+          </motion.a>
         </motion.div>
       </div>
 
       <motion.button
-        onClick={() => scrollTo("about")}
+        onClick={() => scrollTo("projects")}
         className="absolute bottom-8 z-10"
         animate={{
           y: [0, 10, 0],
