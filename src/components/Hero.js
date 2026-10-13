@@ -173,7 +173,7 @@ const Hero = () => {
           transition={{ delay: animationConfig.delay.medium + 0.05 }}
           className="flex flex-col items-center gap-4 mb-12"
         >
-          <div className="grid grid-cols-5 sm:flex sm:flex-row justify-center gap-3 sm:gap-6 px-4 max-w-sm mx-auto">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 px-4 max-w-sm mx-auto">
             {socialLinks.map((link, index) => (
               <motion.a
                 key={index}
