@@ -834,6 +834,12 @@ export const skills = [
 
 export const certifications = [
   {
+    name: "Unreal Engine: Train the Trainers",
+    issuer: "Epic Games & AD Gaming",
+    date: "2026",
+    link: "https://drive.google.com/file/d/1NvXyn5HUVGCQcFjWNWq25x7uazrbKrxv/view?usp=sharing"
+  },
+  {
     name: "More C# Programming and Unity",
     issuer: "University of Colorado",
     date: "2025",
@@ -907,13 +913,13 @@ export const certifications = [
     link:
       "https://drive.google.com/file/d/1C4c_Cs_D_xaUsnhRRaB11GrDsswkSZUe/view?usp=sharing"
   },
-  {
-    name: "Robotics Programming Workshop",
-    issuer: "University of Sharjah",
-    date: "2024",
-    link:
-      "https://drive.google.com/file/d/1gepgt53aKLVkQ0743rbrCszL1VVsu-z4/view?usp=sharing"
-  },
+  // {
+  //   name: "Robotics Programming Workshop",
+  //   issuer: "University of Sharjah",
+  //   date: "2024",
+  //   link:
+  //     "https://drive.google.com/file/d/1gepgt53aKLVkQ0743rbrCszL1VVsu-z4/view?usp=sharing"
+  // },
   {
     name: "Huawei Certified ICT Associate: Datacom",
     issuer: "Huawei",
